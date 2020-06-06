@@ -10,8 +10,6 @@
     background-color: #658726;
 }
 
-
-
 .logo{    
     background-image: url("../../assets/logos/logo_aberto_preto.png");
 
@@ -31,4 +29,9 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.navbar-nav a,
+.footer-copyright {
+    font-family: 'Comfortaa', cursive;
 }

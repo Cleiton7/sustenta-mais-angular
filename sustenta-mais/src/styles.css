@@ -1,4 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */ 
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
 .height-min{
     min-height: 100vh;
 }
@@ -26,4 +29,20 @@
     border: 1px solid #8BBA34;        
     color: #8BBA34;
     box-shadow: 0 3px 0 0 #8BBA34;
+}
+
+/* Estilização formulários */
+
+.home-titulo,
+.formulario-titulo {
+    font-family: 'Comfortaa', cursive;
+    font-size: 32px;
+}
+
+.home-titulo,
+.home-texto,
+.formulario-label,
+.formulario-input,
+.btn-sustenta {
+    font-family: 'Comfortaa', cursive;
 }

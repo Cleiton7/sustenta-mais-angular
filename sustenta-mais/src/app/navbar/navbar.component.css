@@ -32,7 +32,12 @@
 }
 
 .list{
+    font-family: 'Comfortaa', cursive;
     font-size: 20px;
+}
+
+.navbar .list:hover {
+    color: #8BBA34;
 }
 
 /*.form-menu {
