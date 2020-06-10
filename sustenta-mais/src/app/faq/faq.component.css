@@ -1,3 +1,20 @@
+section {
+    background-color: rgba(0, 0, 0, .04);
+}
+
+.faq-titulo {
+    color: #8BBA34;
+}
+
+.faq-perguntas {
+    background-color: #8BBA34;
+    height: 50px;
+}
+
+.faq-perguntas > h2 > button {
+    color: #FFF;
+}
+
 .titulo {
     color: #000;
 }
