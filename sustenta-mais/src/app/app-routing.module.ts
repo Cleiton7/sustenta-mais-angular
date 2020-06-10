@@ -8,6 +8,8 @@ import { CadastroComponent } from './cadastro/cadastro.component';
 import { ListaUsuariosComponent } from './lista-usuarios/lista-usuarios.component';
 import { EditarUsuarioComponent } from './editar-usuario/editar-usuario.component';
 import { DeletarUsuarioComponent } from './deletar-usuario/deletar-usuario.component';
+import { LoginComponent } from './login/login.component';
+import { ProdutosComponent } from './produtos/produtos.component';
 
 
 const routes: Routes = [
@@ -19,7 +21,9 @@ const routes: Routes = [
   { path: 'cadastro', component: CadastroComponent },
   { path: 'lista-usuarios', component: ListaUsuariosComponent },
   { path: 'editar/:id', component: EditarUsuarioComponent },
-  { path: 'deletar/:id', component: DeletarUsuarioComponent }
+  { path: 'deletar/:id', component: DeletarUsuarioComponent },
+  { path: 'login', component: LoginComponent },
+  { path:  'produtos', component: ProdutosComponent }
 ];
 
 @NgModule({

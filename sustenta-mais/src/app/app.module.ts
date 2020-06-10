@@ -14,7 +14,9 @@ import { ListaUsuariosComponent } from './lista-usuarios/lista-usuarios.componen
 import { HttpClientModule } from '@angular/common/http'
 import { FormsModule } from '@angular/forms';
 import { EditarUsuarioComponent } from './editar-usuario/editar-usuario.component';
-import { DeletarUsuarioComponent } from './deletar-usuario/deletar-usuario.component'
+import { DeletarUsuarioComponent } from './deletar-usuario/deletar-usuario.component';
+import { LoginComponent } from './login/login.component';
+import { ProdutosComponent } from './produtos/produtos.component'
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { DeletarUsuarioComponent } from './deletar-usuario/deletar-usuario.compo
     CadastroComponent,
     ListaUsuariosComponent,
     EditarUsuarioComponent,
-    DeletarUsuarioComponent
+    DeletarUsuarioComponent,
+    LoginComponent,
+    ProdutosComponent
   ],
   imports: [
     BrowserModule,

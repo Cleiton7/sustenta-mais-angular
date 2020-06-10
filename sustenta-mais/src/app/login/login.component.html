@@ -1,0 +1,29 @@
+<section class="container-xl height-min d-flex align-items-center">
+    
+    <div class="formulario col-md-5 pt-5 pb-5">
+        
+        <div class="d-flex flex-column align-items-center col-md-12">
+            <div class="form-group col-md-11">
+                <label class="formulario-label" for="email">E-mail</label>
+                <input type="text" class="form-control formulario-input" id="email" placeholder="Digite seu e-mail" [(ngModel)]="usuario.email" required #email="ngModel">
+                <div class="alert alert-danger mt-2" *ngIf="!email.valid && email.touched">
+                    E-mail é obrigatório
+                </div>
+            </div>
+    
+            <div class="form-group col-md-11">
+                <label class="formulario-label" for="senha">Senha</label>
+                <input type="password" class="form-control formulario-input" id="senha" placeholder="Digite sua senha" [(ngModel)]="usuario.senha" required #senha="ngModel">
+                <span class="olho"></span>
+                <div class="alert alert-danger mt-2" *ngIf="!senha.valid && senha.touched">
+                    Senha é obrigatório
+                </div>
+            </div>
+            
+            <div class="btn-confirmar col-md-12 mt-5 d-flex justify-content-center">
+                <button type="button" class="btn-sustenta col-md-6" (click)="validaUsuario()">Entrar</button>
+            </div>
+        </div>
+
+    </div>
+</section>

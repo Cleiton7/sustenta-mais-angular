@@ -1,10 +1,10 @@
-<section class="container-xl height-min mt-5 mb-5">
+<section class="cadastro height-min pb-5 pt-5">
     
-    <div class="formulario d-flex flex-column align-items-center col-md-12">
+    <div class="formulario d-flex flex-column justify-content-center col-md-12">
         <div class="mb-5 mt-5">
             <h2 class="formulario-titulo text-center">Preencha o formulário</h2>
         </div>
-        <div class="col-md-10">
+        <div class="col-md-12">
             <div class="form-group col-md-12" [class.has-error]="!nome.valid && nome.touched">
                 <label class="formulario-label" for="nome">Nome Completo</label>
                 <input type="text" class="form-control formulario-input" id="nome" placeholder="Digite seu nome completo" [(ngModel)]="usuario.nome" required #nome="ngModel">
@@ -41,7 +41,7 @@
                 </div>
             </div>
             
-            <div class="btn-confirmar col-md-12 mb-5 mt-5 d-flex justify-content-center">
+            <div class="btn-confirmar mb-5 mt-5 col-md-12 d-flex justify-content-center">
                 <button type="button" class="btn-sustenta col-md-6" (click)="validaSenha()">Cadastrar</button>
             </div>
         </div>
