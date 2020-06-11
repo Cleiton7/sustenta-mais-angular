@@ -21,7 +21,7 @@ public class Usuario {
 	@Column(name = "nm_usuario", nullable = false, length = 30)
 	@NotNull
 	@Size(min = 2, max = 30)
-	private String titulo;
+	private String nome;
 	
 	@Column(name = "em_usuario", nullable = false, length = 20)
 	@Email
@@ -40,12 +40,12 @@ public class Usuario {
 		this.id = id;
 	}
 
-	public String getTitulo() {
-		return titulo;
+	public String getNome() {
+		return nome;
 	}
 
-	public void setTitulo(String titulo) {
-		this.titulo = titulo;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 
 	public String getEmail() {
