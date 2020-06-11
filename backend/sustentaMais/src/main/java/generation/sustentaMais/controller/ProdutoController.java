@@ -1,8 +1,5 @@
 package generation.sustentaMais.controller;
 
-import generation.sustentaMais.repository.UsuarioRepository;
-import generation.sustentaMais.model.Usuario;
-
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,38 +15,40 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import generation.sustentaMais.model.Produto;
+import generation.sustentaMais.repository.ProdutoRepository;
 
 @RestController
-@RequestMapping("/lista-usuarios")
+@RequestMapping("/produtos")
 @CrossOrigin("*")
-public class UsuarioController {
+public class ProdutoController {
 	
 	@Autowired
-	private UsuarioRepository repository;
+	private ProdutoRepository repository;
 	
 	@GetMapping
-	public ResponseEntity<List<Usuario>> GetAll() {
+	public ResponseEntity<List<Produto>> GetAll() {
 		return ResponseEntity.ok(repository.findAll());
 	}
 	
 	@GetMapping("/{id}")
-	public ResponseEntity<Usuario> GetById(@PathVariable long id){
+	public ResponseEntity<Produto> GetById(@PathVariable long id){
 		return repository.findById(id).map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
 	}
 	
 	@GetMapping("/nome/{nome}")
-	public ResponseEntity<List<Usuario>> GetByNome(@PathVariable String nome){
+	public ResponseEntity<List<Produto>> GetByNome(@PathVariable String nome){
 		return ResponseEntity.ok(repository.findAllByNomeContainingIgnoreCase(nome));
 	}
 	
 	@PostMapping
-	public ResponseEntity<Usuario> Post(@RequestBody Usuario usuario) {
-		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(usuario));
+	public ResponseEntity<Produto> Post(@RequestBody Produto produto) {
+		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(produto));
 	}
 	
 	@PutMapping
-	public ResponseEntity<Usuario> Put(@RequestBody Usuario usuario) {
-		return ResponseEntity.status(HttpStatus.OK).body(repository.save(usuario));
+	public ResponseEntity<Produto> Put(@RequestBody Produto produto) {
+		return ResponseEntity.status(HttpStatus.OK).body(repository.save(produto));
 	}
 	
 	@DeleteMapping("/{id}")
