@@ -17,7 +17,8 @@ import { EditarUsuarioComponent } from './editar-usuario/editar-usuario.componen
 import { DeletarUsuarioComponent } from './deletar-usuario/deletar-usuario.component';
 import { LoginComponent } from './login/login.component';
 import { ProdutosComponent } from './produtos/produtos.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SobreComponent } from './sobre/sobre.component'
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
     EditarUsuarioComponent,
     DeletarUsuarioComponent,
     LoginComponent,
-    ProdutosComponent
+    ProdutosComponent,
+    SobreComponent
   ],
   imports: [
     BrowserModule,
