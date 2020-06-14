@@ -1,37 +1,85 @@
+footer {
+    max-width: 100vw;
+}
+
 .linha1{
-    background-color: #8BBA34; 
-    box-shadow: 0px 0px 2px 3px #666666;    
+    background-color: #8BBA34;
 }
 
 .linha2{
     background-color:  #8BBA34;      
 }
 .linha3{
-    background-color: #658726;
+    background-color: #FFF;
+    height: 300px;
+    width: 95%;
 }
 
 .logo{    
-    background-image: url("../../assets/logos/logo_aberto_preto.png");
-
-    min-height: 60px;
-    min-width: 150px;   
-    
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.logo:hover{
+    /* background-image: url("../../assets/logos/logo_aberto_preto.png"); */
     background-image: url("../../assets/logos/logo_aberto_branco.png");
 
-    min-height: 60px;
-    min-width: 150px;   
+    min-height: 50px;
+    max-width: 10%;
     
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    margin-left: 30px;
+}
+.logo:hover{
+    /* background-image: url("../../assets/logos/logo_aberto_branco.png"); */
+    background-image: url("../../assets/logos/logo_aberto_preto.png");
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
 }
 
-.navbar-nav a,
+.linha3 a,
+.linha3 p,
 .footer-copyright {
     font-family: 'Comfortaa', cursive;
+    font-size: 14px;
+    color: rgba(0,0,0,.7);
+}
+
+.linha3 a:hover {
+    color: #658726;
+}
+
+.linha3 h3 {
+    color: #658726;
+    font-family: 'Comfortaa', cursive;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0px 16px;
+}
+
+.redes-sociais a:nth-of-type(1):hover {
+    color: rgb(225,48,108);
+}
+
+.redes-sociais a:nth-of-type(2):hover {
+    color: #45619d;
+}
+
+.redes-sociais a:nth-of-type(3):hover {
+    color:rgb(29, 161, 242);
+}
+
+.formas-pagamento {
+    width: 25%;
+}
+
+.formas-pagamento div {
+    width: 100%;
+    height: 150px;
+}
+
+.formas-pagamento div {
+    background-image: url("../../assets/images/formas-pagamento.png");
+    background-size: cover;
 }

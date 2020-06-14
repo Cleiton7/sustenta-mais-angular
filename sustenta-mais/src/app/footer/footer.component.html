@@ -1,61 +1,57 @@
-<footer class="container-fluid p-0 mt-1 mx-0">
+<footer>
+    
+    <div class="linha1 ">
+        
+        <div class="logo">
+            <a class="my-auto navbar-brand mx-auto" routerLink='/home'></a>
+        </div>
 
-    <div class=" linha1 w-100 mx-0 p-0 d-flex justify-content-between align-items-center flex-row">
-
-        <a class="my-auto logo navbar-brand mx-auto" routerLink='/home'></a>
-
-        <ul class="navbar-nav linha3 w-75 p-3 rounded-left d-flex justify-content-center ">
-            <small class="d-flex justify-content-around d-flex flex-row">
-                <li class="nav-item outnone m-1">
-                    <a class="nav-link text-light " routerLink='/home'>Home</a>
-                </li>
-                <li class="nav-item outnone m-1">
-                    <a class="nav-link text-light " routerLink='/home'>Produtos</a>
-                </li>
-                <li class="nav-item outnone m-1">
-                    <a class="nav-link text-light " routerLink='/contato'>Contato</a>
-                </li>
-                <li class="nav-item outnone m-1">
-                    <a class="nav-link text-light " routerLink='/faq'>FAQ</a>
-                </li>
-                <li class="nav-item outnone m-1">
-                    <a class="nav-link text-light " routerLink='/politica'>Política de Troca e Devolução</a>
-                </li>
-            </small>
-        </ul>
+        <div class="d-flex justify-content-center">
+            <div class="linha3 p-3 rounded-left d-flex justify-content-around">
+                <div>
+                    <h3>Instucional</h3>
+                    <a class="nav-link" routerLink='home'>Home</a>
+                    <a class="nav-link" routerLink='produtos'>Produtos</a>
+                    <a class="nav-link" routerLink='sobre'>Sobre nós</a>
+                </div>
+                
+                <div>
+                    <h3>Institucional</h3>
+                    <a class="nav-link" routerLink='faq'>FAQ</a>
+                    <a class="nav-link" routerLink='contato'>Contato</a>
+                    <a class="nav-link" routerLink='politica'>Política de Troca e Devolução</a>
+                </div>
+    
+                <div class="formas-pagamento">
+                    <h3 class="text-center">Formas de pagamento</h3>
+                    <div>
+                    </div>
+                </div>
+                
+                <div class="redes-sociais">
+                    <h3>Acompanhe</h3>
+                    <div class="d-flex justify-content-around">
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <fa-icon [icon]="faInstagram" class="fa-2x"></fa-icon>
+                        </a>
+    
+                        <a href="https://www.facebook.com/" class="ml-2 mr-2" target="_blank">
+                            <fa-icon [icon]="faFacebook" class="fa-2x"></fa-icon>
+                        </a>
+    
+                        <a href="https://twitter.com/explore" target="_blank">
+                            <fa-icon [icon]="faTwitter" class="fa-2x"></fa-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="linha2 w-100 row justify-content-md-center mx-0 p-1">
         <div class="col-12 footer-copyright text-center py-2 ">
             <span class="text-dark"> © 2020 Copyright - </span>
-            <a class="text-dark" href="https://brasil.generation.org">brasil.generation.org</a>
+            <a class="text-dark" href="https://brasil.generation.org" target="blank">brasil.generation.org</a>
         </div>
     </div>
-
-    <!-- <nav
-        class="footer py-0 px-5 my-0 container-fluid navbar navbar-expand-lg navbar-dark d-flex justify-content-around ">
-
-        <a class="logo navbar-brand " routerLink='/home'></a>      
-
-        <ul class="navbar-nav">
-            <small class="d-flex flex-row">
-                <li class="nav-item outnone m-1">
-                    <a class="nav-link text-light " routerLink='/home'>Home</a>
-                </li>
-                 <li class="nav-item outnone m-1">
-                    <a class="nav-link text-light " routerLink='/home'>Produtos</a>
-                </li>
-                <li class="nav-item outnone m-1">
-                    <a class="nav-link text-light " routerLink='/contato'>Contato</a>
-                </li>
-                <li class="nav-item outnone m-1">
-                    <a class="nav-link text-light " routerLink='/faq'>FAQ</a>
-                </li>
-                <li class="nav-item outnone m-1">
-                    <a class="nav-link text-light " routerLink='/politica'>Política de Troca e Devolução</a>
-                </li>
-            </small>
-        </ul>
-
-    </nav> -->
 </footer>
