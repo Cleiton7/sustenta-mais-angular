@@ -16,7 +16,9 @@ import { FormsModule } from '@angular/forms';
 import { EditarUsuarioComponent } from './editar-usuario/editar-usuario.component';
 import { DeletarUsuarioComponent } from './deletar-usuario/deletar-usuario.component';
 import { LoginComponent } from './login/login.component';
-import { ProdutosComponent } from './produtos/produtos.component'
+import { ProdutosComponent } from './produtos/produtos.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SobreComponent } from './sobre/sobre.component'
 
 @NgModule({
   declarations: [
@@ -32,13 +34,15 @@ import { ProdutosComponent } from './produtos/produtos.component'
     EditarUsuarioComponent,
     DeletarUsuarioComponent,
     LoginComponent,
-    ProdutosComponent
+    ProdutosComponent,
+    SobreComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
