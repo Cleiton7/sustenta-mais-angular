@@ -2,6 +2,17 @@
     background-color: #ececec;
 }
 
+.parallax {
+    background-image: url('../../assets/images/misao.jpg');
+
+    min-height: 500px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .card{
     background-color: #ececec;
     border: hidden;

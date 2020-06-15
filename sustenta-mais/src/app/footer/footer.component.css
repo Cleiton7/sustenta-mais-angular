@@ -15,27 +15,25 @@ footer {
     width: 95%;
 }
 
-.logo{    
-    /* background-image: url("../../assets/logos/logo_aberto_preto.png"); */
-    background-image: url("../../assets/logos/logo_aberto_branco.png");
+.logo{
+    background-image: url("../../assets/logos/logo_aberto_preto.png");
 
-    min-height: 50px;
-    max-width: 10%;
+    min-height: 67px;
+    min-width: 200px;   
     
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-
-    margin-left: 30px;
+    background-size: 200px 200px;
 }
 .logo:hover{
-    /* background-image: url("../../assets/logos/logo_aberto_branco.png"); */
-    background-image: url("../../assets/logos/logo_aberto_preto.png");
+    background-image: url("../../assets/logos/logo_aberto_verde.png");
+
+    min-height: 67px;
+    min-width: 200px;   
     
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    cursor: pointer;
+    background-size: 200px 200px;
 }
 
 .linha3 a,
