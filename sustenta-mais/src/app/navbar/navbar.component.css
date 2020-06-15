@@ -8,7 +8,6 @@
     outline: none; 	   
 }
 
-
 .logo{
     background-image: url("../../assets/logos/logo_aberto_preto.png");
     opacity: 0.7;
@@ -18,7 +17,7 @@
     
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 150px 150px;
 }
 .logo:hover{
     background-image: url("../../assets/logos/logo_aberto_verde.png");
@@ -28,7 +27,7 @@
     
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 150px 150px;
 }
 
 .list{
@@ -40,32 +39,16 @@
     color: #8BBA34;
 }
 
-/*.form-menu {
-    width: 100%;
+.navbar {
+    height: 60px;
 }
 
-.form-menu > input {
-    width: 80%;
+.botoes-menu {
+    height: 60px;
 }
 
-.lupa{
-    background-image: url("../../assets/logos/lupa_preta.png");
-
-    min-height: 33px;
-    min-width: 33px;   
-    
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.ativo {
+    height: 58px;
+    border-bottom: 3px solid #8BBA34;
+    /* padding: 0; */
 }
-
-.lupa:hover{
-    background-image: url("../../assets/logos/lupa_preta.png");
-
-    min-height: 33px;
-    min-width: 33px;   
-    
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
