@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-@RequestMapping("/lista-usuarios")
+@RequestMapping("/usuario")
 @CrossOrigin("*")
 public class UsuarioController {
 	
