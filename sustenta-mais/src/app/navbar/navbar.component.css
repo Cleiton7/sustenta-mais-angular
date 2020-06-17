@@ -9,8 +9,7 @@
 }
 
 .logo{
-    background-image: url("../../assets/logos/logo_aberto_preto.png");
-    opacity: 0.7;
+    background-image: url("../../assets/logos/logo_aberto_preto.png");    
 
     min-height: 67px;
     min-width: 200px;   
@@ -33,6 +32,7 @@
 .list{
     font-family: 'Comfortaa', cursive;
     font-size: 20px;
+    font-weight: bolder;    
 }
 
 .navbar .list:hover {
