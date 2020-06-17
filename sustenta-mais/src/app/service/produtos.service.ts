@@ -9,8 +9,8 @@ export class ProdutosService {
 
   constructor(private http: HttpClient) { }
 
-  getAllProdutos(page: number, size: number) {
-    return this.http.get(`http://localhost:8080/produtos/${page}/${size}`)
+  findAllProdutos() {
+    return this.http.get(`http://localhost:8080/produtos`)
   }
 
   getByIdProduto(id: number) {
