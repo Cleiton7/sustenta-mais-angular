@@ -1,0 +1,21 @@
+.lupa{
+    background-image: url("../../assets/logos/lupa_preta.png");
+
+    min-height: 33px;
+    min-width: 33px;   
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lupa:hover{
+    background-image: url("../../assets/logos/lupa_preta.png");
+
+    min-height: 33px;
+    min-width: 33px;   
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
