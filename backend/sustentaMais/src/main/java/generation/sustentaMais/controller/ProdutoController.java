@@ -30,10 +30,10 @@ public class ProdutoController {
 	@Autowired
 	private ProdutoRepository repository;
 	
-	@GetMapping("/{page}/{size}")
-	public ResponseEntity<Page<Produto>> GetAll(@PathVariable int page, @PathVariable int size) {
-		Pageable paginacao = PageRequest.of(page, size);
-		return ResponseEntity.ok(repository.findAll(paginacao));
+	@GetMapping()
+	public ResponseEntity<List<Produto>> GetAll() {
+		
+		return ResponseEntity.ok(repository.findAll());
 	}
 	
 	@GetMapping("/{id}")

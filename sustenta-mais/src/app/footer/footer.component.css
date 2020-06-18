@@ -81,3 +81,17 @@ footer {
     background-image: url("../../assets/images/formas-pagamento.png");
     background-size: cover;
 }
+
+
+
+
+.equipeHgPBrito{
+    background-image: url("../../assets/equipe/HgPBrito.jpg");
+
+    min-height: 100px;
+    min-width: 100px;   
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+}
