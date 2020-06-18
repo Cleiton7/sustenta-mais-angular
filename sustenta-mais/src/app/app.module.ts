@@ -18,7 +18,8 @@ import { DeletarUsuarioComponent } from './deletar-usuario/deletar-usuario.compo
 import { LoginComponent } from './login/login.component';
 import { ProdutosComponent } from './produtos/produtos.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { SobreComponent } from './sobre/sobre.component'
+import { SobreComponent } from './sobre/sobre.component';
+import { CadastrarProdutoComponent } from './cadastrar-produto/cadastrar-produto.component'
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { SobreComponent } from './sobre/sobre.component'
     DeletarUsuarioComponent,
     LoginComponent,
     ProdutosComponent,
-    SobreComponent
+    SobreComponent,
+    CadastrarProdutoComponent
   ],
   imports: [
     BrowserModule,
