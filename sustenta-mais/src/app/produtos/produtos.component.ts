@@ -13,6 +13,7 @@ export class ProdutosComponent implements OnInit {
   constructor(private produtosService: ProdutosService, private route: ActivatedRoute) { }
 
   listaProduto: Produtos[]
+  public paginaAtual = 1;
 
   ngOnInit() {
 

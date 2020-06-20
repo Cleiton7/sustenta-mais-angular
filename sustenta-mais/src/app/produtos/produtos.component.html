@@ -8,7 +8,8 @@
     </div>
 
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 mt-5">
-        <div class="col" *ngFor="let produtos of listaProduto">
+        <div class="col"
+            *ngFor="let produtos of listaProduto | paginate: { itemsPerPage: 10, currentPage: paginaAtual }; let i = index">
             <div class="card card-sustenta mb-3">
                 <div class="card-header">
                     <img class="card-img-top" src={{produtos.imagem}} alt="Produto á venda">
@@ -21,4 +22,7 @@
             </div>
         </div>
     </div>
+    <pagination-controls class=" d-flex justify-content-center align-items-center" (pageChange)="paginaAtual = $event"
+        previousLabel="Anterior" nextLabel="Próximo">
+    </pagination-controls>
 </div>
