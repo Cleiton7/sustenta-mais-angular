@@ -82,8 +82,49 @@ footer {
     background-size: cover;
 }
 
+.equipeEstevamboccuggi{
+    background-image: url("../../assets/equipe/Estevamboccuggi.jpeg");
 
+    min-height: 100px;
+    min-width: 100px;   
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+}
 
+.equipeRafaela1997{
+    background-image: url("../../assets/equipe/Rafaela1997.jpeg");
+
+    min-height: 100px;
+    min-width: 100px;   
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+}
+
+.equipeCleiton7{
+    background-image: url("../../assets/equipe/Cleiton7.jpeg");
+
+    min-height: 100px;
+    min-width: 100px;   
+    
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100px 130px;
+}
+
+.equipebeatrizcarvalho97{
+    background-image: url("../../assets/equipe/beatrizcarvalho97.jpeg");
+
+    min-height: 100px;
+    min-width: 100px;   
+    
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100px 130px;
+}
 
 .equipeHgPBrito{
     background-image: url("../../assets/equipe/HgPBrito.jpg");
