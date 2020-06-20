@@ -17,13 +17,13 @@ public class Produto {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	
-	@Column(name = "nm_produto", nullable = false, length = 30)
+	@Column(name = "nm_produto", nullable = false, length = 50)
 	@NotNull
-	@Size(min = 2, max = 30)
+	@Size(min = 2, max = 50)
 	private String nome;
 	
-	@Column(name = "ds_produto", nullable = false, length = 130)
-	@Size(min = 2, max = 130)
+	@Column(name = "ds_produto", nullable = false, length = 255)
+	@Size(min = 2, max = 255)
 	private String descricao;
 	
 	@Column(name = "pc_produto", nullable = false, precision = 6, scale = 2)
