@@ -19,7 +19,9 @@ import { LoginComponent } from './login/login.component';
 import { ProdutosComponent } from './produtos/produtos.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SobreComponent } from './sobre/sobre.component';
-import { CadastrarProdutoComponent } from './cadastrar-produto/cadastrar-produto.component'
+import { CadastrarProdutoComponent } from './cadastrar-produto/cadastrar-produto.component';
+import { EditarProdutoComponent } from './editar-produto/editar-produto.component';
+import { DeletarProdutoComponent } from './deletar-produto/deletar-produto.component'
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { CadastrarProdutoComponent } from './cadastrar-produto/cadastrar-produto
     LoginComponent,
     ProdutosComponent,
     SobreComponent,
-    CadastrarProdutoComponent
+    CadastrarProdutoComponent,
+    EditarProdutoComponent,
+    DeletarProdutoComponent
   ],
   imports: [
     BrowserModule,
