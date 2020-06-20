@@ -11,6 +11,9 @@ import { DeletarUsuarioComponent } from './deletar-usuario/deletar-usuario.compo
 import { LoginComponent } from './login/login.component';
 import { ProdutosComponent } from './produtos/produtos.component';
 import { SobreComponent } from './sobre/sobre.component';
+import { CadastrarProdutoComponent } from './cadastrar-produto/cadastrar-produto.component';
+import { EditarProdutoComponent } from './editar-produto/editar-produto.component';
+import { DeletarProdutoComponent } from './deletar-produto/deletar-produto.component';
 
 
 const routes: Routes = [
@@ -25,7 +28,10 @@ const routes: Routes = [
   { path: 'deletar/:id', component: DeletarUsuarioComponent },
   { path: 'login', component: LoginComponent },
   { path:  'produtos', component: ProdutosComponent },
-  { path: 'sobre', component: SobreComponent }
+  { path: 'sobre', component: SobreComponent },
+  { path: 'cadastrar-produto', component: CadastrarProdutoComponent },
+  { path: 'editar-produto/:id', component: EditarProdutoComponent },
+  { path: 'deletar-produto/:id', component: DeletarProdutoComponent }
 ];
 
 @NgModule({

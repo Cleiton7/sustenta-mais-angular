@@ -1,0 +1,27 @@
+import { Component, OnInit } from '@angular/core';
+import { ProdutosService } from '../service/produtos.service';
+import { Produtos } from '../model/Produtos';
+import { Router } from '@angular/router';
+
+@Component({
+  selector: 'app-cadastrar-produto',
+  templateUrl: './cadastrar-produto.component.html',
+  styleUrls: ['./cadastrar-produto.component.css']
+})
+export class CadastrarProdutoComponent implements OnInit {
+
+  produto : Produtos = new Produtos
+
+  constructor(private produtoService : ProdutosService, private router : Router) { }
+
+  ngOnInit(): void {
+  }
+
+  cadastroProduto() {
+    this.produtoService.postProduto(this.produto).subscribe((resp: Produtos) => {
+      this.produto = resp
+      this.router.navigate(["produtos"])
+    })
+  }
+
+}
