@@ -6,4 +6,3 @@ export class Produtos {
     public imagem: string
     public quantidade: number
 }
-

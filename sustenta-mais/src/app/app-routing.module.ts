@@ -15,7 +15,6 @@ import { CadastrarProdutoComponent } from './cadastrar-produto/cadastrar-produto
 import { EditarProdutoComponent } from './editar-produto/editar-produto.component';
 import { DeletarProdutoComponent } from './deletar-produto/deletar-produto.component';
 
-
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
@@ -27,11 +26,12 @@ const routes: Routes = [
   { path: 'editar/:id', component: EditarUsuarioComponent },
   { path: 'deletar/:id', component: DeletarUsuarioComponent },
   { path: 'login', component: LoginComponent },
-  { path:  'produtos', component: ProdutosComponent },
+  { path: 'produtos', component: ProdutosComponent },
   { path: 'sobre', component: SobreComponent },
   { path: 'cadastrar-produto', component: CadastrarProdutoComponent },
   { path: 'editar-produto/:id', component: EditarProdutoComponent },
-  { path: 'deletar-produto/:id', component: DeletarProdutoComponent }
+  { path: 'deletar-produto/:id', component: DeletarProdutoComponent },
+  { path: 'produtos/nome/:nome', component: ProdutosComponent }
 ];
 
 @NgModule({

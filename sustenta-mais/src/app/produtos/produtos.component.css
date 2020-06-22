@@ -20,6 +20,13 @@
     background-size: cover;
 }
 
-.card-sustenta{
-    
+@media (max-width:991px){
+
+    .form-pesquisa{
+        margin-top: 2.5rem;
+    }
+
+    .btn-sustenta{
+        margin-top: 2.5rem;
+    }
 }
