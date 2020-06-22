@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { ProdutosService } from '../service/produtos.service';
 import { Produtos } from '../model/Produtos';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-produtos',
@@ -10,22 +10,37 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ProdutosComponent implements OnInit {
 
-  constructor(private produtosService: ProdutosService, private route: ActivatedRoute) { }
+  produtos: Produtos = new Produtos
 
+  nome: string
+  
+  constructor(private produtosService: ProdutosService, private route: ActivatedRoute, private router: Router) { }
+  
   listaProduto: Produtos[]
+  
+  ngOnInit(): void{
 
-  ngOnInit() {
+  this.getAllProdutos()
+  
+  let nome = this.route.snapshot.params['nome']
+  this.findByNameProduto(nome);
+}
 
+  findByNameProduto(nome: string){
+    this.produtosService.getByNameProduto(nome).subscribe((resp : Produtos)=>{
+      this.produtos = resp
+    })
+  }
 
-    this.getAllProdutos()
-
+  pesquisarPorNome(){
+    this.produtosService.findByNameProduto(this.nome).subscribe((resp: Produtos[])=>{
+      this.listaProduto = resp
+    })
   }
 
   getAllProdutos() {
     this.produtosService.findAllProdutos().subscribe((resp: Produtos[]) => {
-      this.listaProduto = resp;
-
-    });
+      this.listaProduto = resp
+    })
   }
-
 }

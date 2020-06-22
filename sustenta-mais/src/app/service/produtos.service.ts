@@ -32,4 +32,8 @@ export class ProdutosService {
   deleteProduto(id: number) {
     return this.http.delete(`http://localhost:8080/produtos/${id}`)
   }
+
+  findByNameProduto(nome: string){
+    return this.http.get(`http://localhost:8080/produtos/nome/${nome}`)
+  }
 }
