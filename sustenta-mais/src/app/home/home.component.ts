@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  sustentabilidade : String = "assets/images/sustentabilidade.jpg"
+  sustentabilidadeDois : String = "assets/images/sustentabilidade-dois.jpg"
+  sustentabilidadeTres : String = "assets/images/sustentabilidade-tres.jpg"
+
   constructor() { }
 
   ngOnInit(): void {

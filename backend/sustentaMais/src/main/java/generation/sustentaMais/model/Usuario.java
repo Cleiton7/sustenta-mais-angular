@@ -14,22 +14,23 @@ import com.sun.istack.NotNull;
 @Entity
 @Table(name = "TB_USUARIO")
 public class Usuario {
+	@Column(name = "cd_usuario", nullable = false, length = 60)
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	
-	@Column(name = "nm_usuario", nullable = false, length = 30)
+	@Column(name = "nm_usuario", nullable = false, length = 60)
 	@NotNull
-	@Size(min = 2, max = 30)
+	@Size(min = 2, max = 60)
 	private String nome;
 	
-	@Column(name = "em_usuario", nullable = false, length = 20)
+	@Column(name = "em_usuario", nullable = false, length = 60)
 	@Email
-	@Size(min = 2, max = 20)
+	@Size(min = 2, max = 60)
 	private String email;
 	
-	@Column(name = "cd_senha", nullable = false, length = 10)
-	@Size(min = 6, max = 10)
+	@Column(name = "cd_senha", nullable = false, length = 255)
+	@Size(min = 6, max = 255)
 	private String senha;
 
 	public long getId() {
