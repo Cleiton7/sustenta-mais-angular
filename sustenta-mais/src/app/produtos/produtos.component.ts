@@ -17,8 +17,11 @@ export class ProdutosComponent implements OnInit {
   constructor(private produtosService: ProdutosService, private route: ActivatedRoute, private router: Router) { }
   
   listaProduto: Produtos[]
+
+  public paginaAtual = 1;
   
   ngOnInit(): void{
+  
 
   this.getAllProdutos()
   
