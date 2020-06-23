@@ -33,4 +33,8 @@ export class EditarProdutoComponent implements OnInit {
     })
   }
 
+  cancelar() {
+    this.router.navigate(['/produtos'])
+  }
+
 }
