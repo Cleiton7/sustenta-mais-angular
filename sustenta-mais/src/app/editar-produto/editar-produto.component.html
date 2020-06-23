@@ -33,7 +33,7 @@
 
                 <div class="form-group col-md-12">
                     <label for="imagem">Imagem</label>
-                    <input type="image" class="form-control" id="imagem" placeholder="Informe a URL da imagem" required [(ngModel)]="produto.imagem" #imagem="ngModel">
+                    <input type="text" class="form-control" id="imagem" placeholder="Informe a URL da imagem" required [(ngModel)]="produto.imagem" #imagem="ngModel">
                     <div class="alert alert-danger mt-2" *ngIf="!imagem.valid && imagem.touched">
                         Imagem é obrigatório
                     </div>

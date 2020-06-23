@@ -38,7 +38,12 @@ public class BasicSecurityConfig extends WebSecurityConfigurerAdapter {
 			.authorizeRequests()
 				.antMatchers(HttpMethod.POST, "/usuario").permitAll() // permite a rota para cadastro de usuario
 				.antMatchers(HttpMethod.POST, "/usuario/login").permitAll() // permite a rota para login de usuario
+				.antMatchers(HttpMethod.POST, "/produtos").permitAll() // permite a rota para cadastro de produto
+				.antMatchers(HttpMethod.PUT, "/produtos").permitAll() // permite a rota para edição de produto
+				.antMatchers(HttpMethod.GET, "/produtos/{id}").permitAll() // permite a rota para pegar produto por id
 				.antMatchers(HttpMethod.GET, "/produtos").permitAll() // permite a rota para listagem de produtos
+				.antMatchers(HttpMethod.GET, "/produtos/nome/{nome}").permitAll() // permite a rota para pegar produto por nome
+				.antMatchers(HttpMethod.DELETE, "/produtos/{id}").permitAll() // permite a rota para deletar produto
 				.anyRequest().authenticated() // exige autenticação para as demais rotas
 		.and()
 			.cors()

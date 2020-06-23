@@ -29,7 +29,6 @@ export class EditarProdutoComponent implements OnInit {
     this.produtoService.putProduto(this.produto).subscribe((resp: Produtos)=>{
       this.produto = resp
       this.router.navigate(['/produtos'])
-      location.assign('/produto')
     })
   }
 
