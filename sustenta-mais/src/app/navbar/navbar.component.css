@@ -38,17 +38,3 @@
 .navbar .list:hover {
     color: #8BBA34;
 }
-
-.navbar {
-    height: 60px;
-}
-
-.botoes-menu {
-    height: 60px;
-}
-
-.ativo {
-    height: 58px;
-    border-bottom: 3px solid #8BBA34;
-    /* padding: 0; */
-}
