@@ -39,12 +39,8 @@
     color: #000000;
 }    
 /* detalhamento na responsividade */
-@media (max-width:1091px){
-    .list, .btn-sustenta{
-        font-size: 15px;
-    }
-}
-@media (max-width:461px){
+
+@media (max-width:454px){
 
     .logo,.logo:hover{
         margin-top: -50px;

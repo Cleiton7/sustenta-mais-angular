@@ -1,59 +1,47 @@
-footer {
-    max-width: 100vw;
-}
-
-.linha1{
-    background-color: #8BBA34;
-}
-
-.linha2{
-    background-color:  #8BBA34;      
-}
-.linha3{
-    background-color: #FFF;
-    height: 300px;
-    width: 95%;
+.rodape{
+    background-color: #8BBA34; 
+    font-family: 'Comfortaa', cursive;     
 }
 
 .logo{
-    background-image: url("../../assets/logos/logo_aberto_preto.png");
+    background-image: url("../../assets/logos/logo_aberto_branco.png");
 
-    min-height: 67px;
-    min-width: 200px;   
+    min-height: 50px;
+    min-width: 125px;   
     
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 200px 200px;
+    background-size: 125px 125px;
 }
 .logo:hover{
-    background-image: url("../../assets/logos/logo_aberto_verde.png");
+    background-image: url("../../assets/logos/logo_aberto_preto.png");
 
-    min-height: 67px;
-    min-width: 200px;   
+    min-height: 50px;
+    min-width: 125px;   
     
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 200px 200px;
+    background-size: 125px 125px;
 }
 
-.linha3 a,
-.linha3 p,
-.footer-copyright {
-    font-family: 'Comfortaa', cursive;
+a,p,.footer-copyright {
+    
     font-size: 14px;
     color: rgba(0,0,0,.7);
 }
 
-.linha3 a:hover {
+h5, a:hover{
     color: #658726;
 }
 
-.linha3 h3 {
-    color: #658726;
-    font-family: 'Comfortaa', cursive;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 0px 16px;
+.formas-pagamento{
+    background-image: url("../../assets/images/formas-pagamento.png");
+    min-height: 140px;
+    min-width: 350px;   
+    
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 350px 175px;
 }
 
 .redes-sociais a:nth-of-type(1):hover {
@@ -68,19 +56,7 @@ footer {
     color:rgb(29, 161, 242);
 }
 
-.formas-pagamento {
-    width: 25%;
-}
 
-.formas-pagamento div {
-    width: 100%;
-    height: 150px;
-}
-
-.formas-pagamento div {
-    background-image: url("../../assets/images/formas-pagamento.png");
-    background-size: cover;
-}
 
 .equipeEstevamboccuggi{
     background-image: url("../../assets/equipe/Estevamboccuggi.jpeg");
