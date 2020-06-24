@@ -14,6 +14,10 @@ export class CadastroComponent implements OnInit {
 
   confirmaSenha = "";
 
+  alerta: boolean = false
+
+  cadastroOk: boolean = false;
+
   constructor(
     private usuarioService: UsuariosService,
     private router: Router
@@ -31,7 +35,9 @@ export class CadastroComponent implements OnInit {
   cadastroUsuario() {
     this.usuarioService.postUsuario(this.usuario).subscribe((resp: Usuarios) => {
       this.usuario = resp
-      this.router.navigate(["lista-usuarios"])
+      this.cadastroOk = true
+      this.router.navigate(["login"])
+      localStorage.setItem("cadastroOk", this.cadastroOk.toString())
     })
   }
 }

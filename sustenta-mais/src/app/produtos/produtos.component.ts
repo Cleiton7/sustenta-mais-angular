@@ -22,11 +22,16 @@ export class ProdutosComponent implements OnInit {
   
   ngOnInit(): void{
   
+    let token = localStorage.getItem('token')
+    if(token == null) {
+      alert('Faça login')
+      this.router.navigate(['/login'])
+    }
 
-  this.getAllProdutos()
-  
-  let nome = this.route.snapshot.params['nome']
-  this.findByNameProduto(nome);
+    this.getAllProdutos()
+    
+    let nome = this.route.snapshot.params['nome']
+    this.findByNameProduto(nome);
 }
 
   findByNameProduto(nome: string){
