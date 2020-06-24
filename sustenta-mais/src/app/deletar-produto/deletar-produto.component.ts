@@ -36,7 +36,7 @@ export class DeletarProdutoComponent implements OnInit {
   }
 
   // método para apagar o produto que foi clicado
-  apagarProduto() {
+  deletarProduto() {
     // usando o produtoService que foi declarado no nosso construtor invocamos o endpoint 'deleteProduto' da nossa service
     this.produtoService.deleteProduto(this.produto.id).subscribe(() => {
       this.delOk = true // seta um novo valor para a variavel 'delOk' criada na linha 15
@@ -45,7 +45,7 @@ export class DeletarProdutoComponent implements OnInit {
     })
   }
 
-  naoApagar(){
+  naoDeletar(){
     this.router.navigate(['/produtos']) // redireciona para a lista de produtos caso escolha nao apagar o produto
   }
 }

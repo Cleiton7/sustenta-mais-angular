@@ -22,7 +22,8 @@
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
     line-height: 1.5;
-    border-radius: 5px;      
+    border-radius: 5px;
+    white-space: nowrap;
 }
 .btn-sustenta:hover{  
     border: 1px solid #8BBA34;        
@@ -33,7 +34,9 @@
 /* Estilização formulários */
 
 .home-titulo,
-.formulario-titulo {
+.formulario-titulo,
+.login-titulo,
+.politica-titulo {
     font-family: 'Comfortaa', cursive;
     font-size: 28px;
 }
@@ -47,6 +50,7 @@
 .formulario-label,
 .formulario-input,
 .btn-sustenta,
-.modal {
+.modal,
+#politica {
     font-family: 'Comfortaa', cursive;
 }

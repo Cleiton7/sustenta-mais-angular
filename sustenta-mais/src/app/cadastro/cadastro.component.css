@@ -4,3 +4,10 @@
     margin: 0 auto;
     width: 30vw;
 }
+
+@media (max-width: 768px){
+    .formulario{
+        width: auto;
+        height: auto;
+    }
+}

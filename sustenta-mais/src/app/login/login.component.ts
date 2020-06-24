@@ -22,40 +22,4 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  validaUsuario(){
-      
-      // this.usuarioService.getAllUsuarios()
-
-      this.usuarioService.getAllUsuarios().subscribe((resp : Usuarios []) => {
-          const objUser = this.usuario
-          const arrayUser = Object.entries(objUser).map(([type, value]) => ({type, value}));
-          // console.log(arrayUser)
-
-          this.listaUsuarios = resp
-          const obj = this.listaUsuarios
-          const array = Object.entries(obj).map(([type, value]) => ({type, value}));
-          console.log(array)
-
-          for(let i = 0; i < array.length; i++){
-              let emailBanco = array[i].value.email
-              let senhaBanco = array[i].value.senha
-              console.log(emailBanco)
-              for(let j = 0; j < arrayUser.length; j++){
-                  let emailUser = this.usuario.email
-                  let senhaUser = this.usuario.senha
-                  // console.log(emailBanco)
-                  // console.log(senhaBanco)
-                  if(emailBanco == emailUser && senhaBanco == senhaUser){
-                      console.log(emailBanco)
-                      console.log(senhaBanco)
-                      this.router.navigate(["lista-usuarios"])
-                  }
-                  j+=1 
-              }
-          } 
-            // if(this.usuario.email == resp.email && this.usuario.senha == resp.senha){
-            //   console.log(this.usuario)
-            // }
-      })
-  }
 }
