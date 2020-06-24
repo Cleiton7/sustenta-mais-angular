@@ -1,37 +1,32 @@
-<header class="container-fluid py-0 px-0">
-    <div class="menu container-fluid py-3 px-5 mb-1">
+<!-- usado bootstrap para o layaut e estilização  -->
+<header class="container-fluid py-3 px-4 menu mb-1">
+    <nav class="navbar navbar-expand-lg text-light bg-light rounded-lg px-5 w-100 d-flex justify-content-between">
+        <!-- menu hamburguer no button-->
+        <button class="hamburguer navbar-toggler " type="button" data-toggle="collapse"
+            data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false"
+            aria-label="Alterna navegação">
+            <!-- ícone do menu hamburguer -->
+            <fa-icon [icon]="faWater"></fa-icon>
+        </button>
+        <!-- logo com hover no css para mudar de cor -->
+        <a class="logo navbar-brand ml-5 " routerLink='/home'></a>
 
-        <nav class="navbar navbar-expand-lg text-light navbar-light bg-light rounded-lg px-5 d-flex">
+        <!-- div para ocultar quando menu hamburguer estiver ativo -->
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+            <div class=" w-100 d-flex  justify-content-center">
+                <div class="navbar-nav w-100 d-flex justify-content-around align-items-center">
 
-            <button class="hamburguer navbar-toggler" type="button" data-toggle="collapse"
-                data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false"
-                aria-label="Alterna navegação">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                    <a class="list outnone nav-link p-3" routerLink='produtos'>Produtos</a>
 
+                    <a class="list outnone nav-link p-3" routerLink='sobre'>Sobre a Empresa</a>
 
-            <a class="logo navbar-brand mx-auto" routerLink='/home'></a>
-
-            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-                <div class=" w-100 d-flex  justify-content-center">
-                    <div class="navbar-nav d-flex w-75 justify-content-around align-items-center">
-                        <a class="list outnone nav-link p-3" routerLink='home'>Home</a>
-
-                        <a class="list outnone nav-link p-3" routerLink='produtos'>Produtos</a>
-
-                        <a class="list outnone nav-link p-3" routerLink='sobre'>Sobre</a>
-                        <div class="botoes-menu d-flex align-items-center" id="botoes-menu">
-                            <button class="btn-sustenta mr-2 " type="button" routerLink="login">Login</button>
-                            <button class="btn-sustenta ml-2 " type="button" routerLink="cadastro">Cadastre-se</button>
-                        </div>
+                    <a class="list outnone nav-link p-3" routerLink='contato'>Contato</a>
+                    <div class="botoes-menu d-flex align-items-center" id="botoes-menu">
+                        <button class="btn-sustenta mr-2 " type="button" routerLink="login">Login</button>
+                        <button class="btn-sustenta ml-2 " type="button" routerLink="cadastro">Cadastre-se</button>
                     </div>
                 </div>
             </div>
-
-             <!--<div class="botoes-menu d-flex align-items-center" id="botoes-menu">
-                <button class="btn-sustenta mr-2 " type="button" routerLink="login">Login</button>
-                <button class="btn-sustenta ml-2 " type="button" routerLink="cadastro">Cadastre-se</button>
-            </div>-->
-        </nav>
-    </div>
+        </div>
+    </nav>
 </header>

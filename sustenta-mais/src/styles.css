@@ -13,12 +13,12 @@
 .btn-sustenta{
     display: inline-block;
     font-weight: 400;
-    color: #000000;
-    box-shadow: 0 3px 0 0 #000000;
+    color: #658726;
+    box-shadow: 1px 3px 3px 1px #658726;
     text-align: center;
     cursor: pointer;     
     background-color: transparent;
-    border: 1px solid #000000;
+    border: 1px solid #658726;
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
     line-height: 1.5;
@@ -26,9 +26,9 @@
     white-space: nowrap;
 }
 .btn-sustenta:hover{  
-    border: 1px solid #8BBA34;        
-    color: #8BBA34;
-    box-shadow: 0 3px 0 0 #8BBA34;
+    border: 1px solid #000000;        
+    color: #000000;
+    box-shadow: 0 3px 0 0 #000000;
 }
 
 /* Estilização formulários */

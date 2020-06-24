@@ -1,78 +1,56 @@
-    .menu{
-        background-color: #8BBA34;    
-        box-shadow: 0 0 10px 0 #000000;
-    }
-    
-    .hamburguer{
-        border: none;
-        outline: none;
-        }
-    
-    .logo{
-        background-image: url("../../assets/logos/logo_aberto_preto.png");    
-    
-        min-height: 67px;
-        min-width: 200px;   
-        
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 150px 150px;
-    }
-    .logo:hover{
-        background-image: url("../../assets/logos/logo_aberto_verde.png");
-    
-        min-height: 67px;
-        min-width: 200px;   
-        
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 150px 150px;
-    }
-    
-    .list{
-        font-family: 'Comfortaa', cursive;
-        font-size: 20px;
-        font-weight: bolder;    
-    }
-    
-    .navbar .list:hover {
-        color: #8BBA34;
-    }
-    
-    .navbar {
-        height: 60px;
-    }
-    
-    .botoes-menu {
-        height: 60px;
-    }
-    
-    .ativo {
-        height: 58px;
-        border-bottom: 3px solid #8BBA34;
-        /* padding: 0; */
-    }
-
-@media (max-width: 991px){
-    .logo,.logo:hover,.hamburguer{
-        margin-top: -12px;
+/* modificação no background do header  */
+.menu{
+    background-color: #8BBA34;    
+    box-shadow: 0 0 10px 0 #000000;
+}
+/* eliminação da borda e modificação da cor do hamburguer  */
+.hamburguer{
+    border: none;
+    outline: none;
+    color: #8BBA34;
+}
+/* criação do logo no header  */
+.logo{
+    background-image: url("../../assets/logos/logo_aberto_verde.png");        
+    min-height: 67px;
+    min-width: 200px;           
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150px 150px;
+}
+/* modificação da cor do logo quando o mouse passa em cima  */
+.logo:hover{
+    background-image: url("../../assets/logos/logo_aberto_preto.png");    
+    min-height: 67px;
+    min-width: 200px;   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150px 150px;
+}
+/* estilização do texto dos campos do menu  */
+.list{
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    font-weight: bolder; 
+    color:#658726;   
+}
+/* muda a cor do texto do menu quando se tem interação com o mouse  */
+.navbar .list:hover {
+    color: #000000;
+}    
+/* detalhamento na responsividade */
+@media (max-width:1091px){
+    .list, .btn-sustenta{
+        font-size: 15px;
     }
 }
-
-@media (max-width: 768px){
-
-    .logo, .logo:hover,.hamburguer {
-        margin-top: -12px;
-    }
-}
-
-@media (max-width:445px){
+@media (max-width:461px){
 
     .logo,.logo:hover{
-        margin-top: -55px;
+        margin-top: -50px;
     }
 
     .hamburguer{
-        margin-top: 5px;
+        margin-top: 15px;
     }
 }
