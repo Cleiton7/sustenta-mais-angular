@@ -1,1 +1,60 @@
-<p>cadastrar-produto works!</p>
+<section class="cadastro height-min pb-5 pt-5">
+
+    <div class="formulario d-flex flex-column justify-content-center col-md-12">
+        <div class="mb-5 mt-5">
+            <h2 class="formulario-titulo text-center">Cadastrar Produto</h2>
+        </div>
+        <div class="col-md-12">
+            <div class="form-group col-md-12" [class.has-error]="!nome.valid && nome.touched">
+                <label class="formulario-label" for="nome">Nome do Produto</label>
+                <input type="text" class="form-control formulario-input" id="nome"
+                    placeholder="Digite o nome do produto" [(ngModel)]="produto.nome" required #nome="ngModel">
+                <div class="alert alert-danger mt-2" *ngIf="!nome.valid && nome.touched">
+                    Nome é obrigatório
+                </div>
+            </div>
+
+            <div class="form-group col-md-12">
+                <label class="formulario-label" for="descricao">Descricao</label>
+                <input type="text" class="form-control formulario-input" id="descricao" placeholder=" Digite a descricao"
+                    do produto [(ngModel)]="produto.descricao" required #descricao="ngModel">
+                <div class="alert alert-danger mt-2" *ngIf="!descricao.valid && descricao.touched">
+                    descricao é obrigatório
+                </div>
+            </div>
+
+            <div class="form-group col-md-12">
+                <label class="formulario-label" for="preco">Preço</label>
+                <input type="text" class="form-control formulario-input" id="preco" placeholder=" Digite o preco"
+                    produto [(ngModel)]="produto.preco" required #preco="ngModel">
+                <div class="alert alert-danger mt-2" *ngIf="!preco.valid && preco.touched">
+                    preco é obrigatório
+                </div>
+            </div>
+
+            <div class="form-group col-md-12">
+                <label class="formulario-label" for="imagem">Imagem</label>
+                <input type="text" class="form-control formulario-input" id="imagem" placeholder="Digite a url da Imagem"
+                    [(ngModel)]="produto.imagem" required #imagem="ngModel">
+                <div class="alert alert-danger mt-2" *ngIf="!imagem.valid && imagem.touched">
+                    Imagem é obrigatório
+                </div>
+            </div>
+
+            <div class="form-group col-md-12">
+                <label class="formulario-label" for="quantidade">Quantidade</label>
+                <input type="text" class="form-control formulario-input" id="quantidade" placeholder="Digite a quantidade de produtos"
+                    [(ngModel)]="produto.quantidade" required #quantidade="ngModel">
+                <div class="alert alert-danger mt-2" *ngIf="!quantidade.valid && quantidade.touched">
+                    quantidade é obrigatório
+                </div>
+            </div>
+
+        </div>
+
+        <div class="btn-confirmar mb-5 mt-5 col-md-12 d-flex justify-content-center">
+            <button type="button" class="btn-sustenta col-md-6" (click)="cadastroProduto()">Cadastrar Produto</button>
+        </div>
+
+    </div>
+</section>
