@@ -58,6 +58,7 @@ export class LoginComponent implements OnInit {
     this.authService.logar(this.usuarioLogin).subscribe((resp: UsuarioLogado) => {
       this.usuarioLogado = resp
       localStorage.setItem('token', this.usuarioLogado.token)
+      localStorage.setItem('nome', this.usuarioLogado.nome)
       this.router.navigate(['produtos']);
     }, err => {
       alert("Erro ao efetuar o login. Verifique o e-mail e a senha.")
