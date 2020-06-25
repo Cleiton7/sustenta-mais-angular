@@ -1,4 +1,4 @@
-.rodape{
+.rodape, .card-header{
     background-color: #8BBA34; 
     font-family: 'Comfortaa', cursive;     
 }
@@ -30,8 +30,9 @@ a,p,.footer-copyright {
     color: rgba(0,0,0,.7);
 }
 
-h5, a:hover{
+h5, h3,.card-body, a:hover{
     color: #658726;
+    
 }
 
 .formas-pagamento{
@@ -56,20 +57,33 @@ h5, a:hover{
     color:rgb(29, 161, 242);
 }
 
+.redesProf a:nth-of-type(1):hover{
+    color: #000000;
+}
+.redesProf  a:nth-of-type(2):hover {
+    color: #0073b1;
+}
 
+.btn{
+    color: #ffffff;
+    font-weight: 900;
+    box-shadow: none !important;
+}
 
 .equipeEstevamboccuggi{
+    border:solid 5px #ffffff;
     background-image: url("../../assets/equipe/Estevamboccuggi.jpeg");
 
     min-height: 100px;
     min-width: 100px;   
     
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
-    background-size: 100px 100px;
+    background-size: 100px 130px;
 }
 
 .equipeRafaela1997{
+    border:solid 5px #ffffff;
     background-image: url("../../assets/equipe/Rafaela1997.jpeg");
 
     min-height: 100px;
@@ -81,6 +95,7 @@ h5, a:hover{
 }
 
 .equipeCleiton7{
+    border:solid 5px #ffffff;
     background-image: url("../../assets/equipe/Cleiton7.jpeg");
 
     min-height: 100px;
@@ -92,6 +107,7 @@ h5, a:hover{
 }
 
 .equipebeatrizcarvalho97{
+    border:solid 5px #ffffff;
     background-image: url("../../assets/equipe/beatrizcarvalho97.jpeg");
 
     min-height: 100px;
@@ -103,6 +119,7 @@ h5, a:hover{
 }
 
 .equipeHgPBrito{
+    border:solid 5px #ffffff;
     background-image: url("../../assets/equipe/HgPBrito.jpg");
 
     min-height: 100px;
