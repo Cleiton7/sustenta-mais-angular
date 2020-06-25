@@ -14,7 +14,7 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 export class FooterComponent implements OnInit {
 
   formasPag: String = "assets/images/formas-pagamento.png"
-
+  // icons usados na pagina 
   faInstagram = faInstagram;
   faFacebook = faFacebook;
   faTwitter = faTwitter;
