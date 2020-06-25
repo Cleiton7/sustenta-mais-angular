@@ -22,9 +22,15 @@
 
                     <a class="list outnone nav-link p-3" routerLink='contato'>Contato</a>
                     <div class="botoes-menu d-flex align-items-center" id="botoes-menu">
-                        <button class="btn-sustenta mr-2 " type="button" routerLink="login">Login</button>
-                        <button class="btn-sustenta mx-2 " type="button" routerLink="cadastro">Cadastre-se</button>
-                        <button class="btn-sustenta ml-2 " type="button" routerLink="cadastro">Sair</button>
+                        <!-- Se não houver usuario logado esse *ngIf retornará true e assim mostrará os botões de Login e Cadastre-se -->
+                        <div *ngIf="auth.btnLogin()">
+                            <button class="btn-sustenta mr-2 " type="button" routerLink="login">Login</button>
+                            <button class="btn-sustenta mx-2 " type="button" routerLink="cadastro">Cadastre-se</button>
+                        </div>
+                        <!-- Se houver usuario logado esse *ngIf retornará true e assim mostrará o botão de sair -->
+                        <div *ngIf="auth.btnSair()">
+                            <button class="btn-sustenta ml-2 " type="button" (click)="sair()">Sair</button>
+                        </div>
                     </div>
                 </div>
             </div>

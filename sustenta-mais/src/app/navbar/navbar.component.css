@@ -37,7 +37,13 @@
 /* muda a cor do texto do menu quando se tem interação com o mouse  */
 .navbar .list:hover {
     color: #000000;
-}    
+} 
+
+/* Estilização no nome do usuario logado */
+.nome-usuario {
+    color: #000;
+}
+
 /* detalhamento na responsividade */
 
 @media (max-width:454px){
