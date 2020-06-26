@@ -27,26 +27,27 @@
     </div>
 </section>
 
-
-    <swiper class="container" [config]="config">
+<section class="produtos">
+    <div>
+        <h2 class="text-center mt-5">Ofertas</h2>
+    </div>
+    <swiper class="container pt-5 pb-5" [config]="config">
         <div class="swiper-wrapper">
-            <div class="swiper-slide" *ngFor="let produto of listaProdutos">
-                
-                <div class="card" style="width: 18rem;">
+            <div class="swiper-slide" *ngFor="let produto of produtoBarato">
+                <div class="card produtos-card">
                     <img src="{{ produto.imagem }}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <p class="card-title text-center">{{ produto.nome }}</p>
+                        <p class="card-text">{{ produto.preco | currency:'R$ ' }}</p>
+                        <a href="#" class="btn btn-outline-success">confira</a>
                     </div>
                 </div>
-                
             </div>
-
         </div>
         <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
+        <!-- <div class="swiper-pagination"></div> -->
         <!-- Add Arrows -->
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
     </swiper>
+</section>
