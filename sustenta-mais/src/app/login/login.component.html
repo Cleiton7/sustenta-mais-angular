@@ -1,3 +1,4 @@
+<!-- Essa mensagem será mostrada se a variavel alerta no TypeScript for true -->
 <div class="container" *ngIf="alerta">
     <div class="alert alert-success" role="alert">
         Usuário cadastrado com sucesso! Faça seu login na plataforma.
@@ -26,9 +27,10 @@
                     Senha é obrigatório
                 </div>
             </div>
-            <!-- <div class="alert alert-danger mt-2" *ngIf="erroLogin == true">
+            <!-- Essa mensagem será mostrada se a variavel erroLogin no TypeScript for true -->
+            <div class="alert alert-danger mt-2" *ngIf="erroLogin">
                 Erro ao efetuar o login. Verifique o e-mail e a senha.
-            </div> -->
+            </div>
             
             <div class="btn-confirmar col-md-12 mt-5 d-flex justify-content-center">
                 <button type="button" class="btn-sustenta col-md-6" (click)="entrar()">Entrar</button>
