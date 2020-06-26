@@ -7,8 +7,9 @@
 }
 
 .outnone{
-    outline: none;
+    outline: none !important;
 }
+
 
 .btn-sustenta{
     display: inline-block;

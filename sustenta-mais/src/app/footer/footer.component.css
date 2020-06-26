@@ -1,118 +1,167 @@
-.rodape{
+/* defini a fontre e cor de fundo do container do footer e nos cards de equipe */
+.rodape, .card-header{
     background-color: #8BBA34; 
     font-family: 'Comfortaa', cursive;     
 }
-
+/* criação do logo  */
 .logo{
     background-image: url("../../assets/logos/logo_aberto_branco.png");
-
     min-height: 50px;
-    min-width: 125px;   
-    
+    min-width: 125px;     
     background-position: center;
     background-repeat: no-repeat;
     background-size: 125px 125px;
 }
+/* muda a cor do logo quando passa o mouse  */
 .logo:hover{
-    background-image: url("../../assets/logos/logo_aberto_preto.png");
-
-    min-height: 50px;
-    min-width: 125px;   
-    
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 125px 125px;
+    background-image: url("../../assets/logos/logo_aberto_preto.png");    
 }
-
-a,p,.footer-copyright {
-    
+/* padronização do texto dos links  */
+a,p,.footer-copyright {    
     font-size: 14px;
     color: rgba(0,0,0,.7);
 }
-
-h5, a:hover{
+/* padronização da cor dos demais textos */
+h5, h3,.card-body, a:hover{
     color: #658726;
+    
 }
-
+/* criação dos exemplos de forma de pagamento  */
 .formas-pagamento{
     background-image: url("../../assets/images/formas-pagamento.png");
     min-height: 140px;
-    min-width: 350px;   
-    
+    min-width: 350px;       
     background-position: top;
     background-repeat: no-repeat;
     background-size: 350px 175px;
 }
-
+/* estilização dos ícones usados  */
 .redes-sociais a:nth-of-type(1):hover {
     color: rgb(225,48,108);
 }
-
 .redes-sociais a:nth-of-type(2):hover {
     color: #45619d;
 }
-
 .redes-sociais a:nth-of-type(3):hover {
     color:rgb(29, 161, 242);
 }
-
-
-
+.redesProf a:nth-of-type(1):hover{
+    color: #000000;
+}
+.redesProf  a:nth-of-type(2):hover {
+    color: #0073b1;
+}
+/* otimização do acordion no modal da equipe  */
+.btn{
+    color: #ffffff;
+    font-weight: 900;
+    box-shadow: none !important;
+}
+/* imagem estevam no modal  */
 .equipeEstevamboccuggi{
+    border:solid 5px #ffffff;
     background-image: url("../../assets/equipe/Estevamboccuggi.jpeg");
-
     min-height: 100px;
-    min-width: 100px;   
-    
-    background-position: center;
+    min-width: 100px;     
+    background-position: top;
     background-repeat: no-repeat;
-    background-size: 100px 100px;
+    background-size: 100px 130px;
 }
-
+/* imagem rafaela no modal  */
 .equipeRafaela1997{
+    border:solid 5px #ffffff;
     background-image: url("../../assets/equipe/Rafaela1997.jpeg");
-
     min-height: 100px;
-    min-width: 100px;   
-    
+    min-width: 100px;       
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100px 100px;
 }
-
+/* imagem cleiton no modal  */
 .equipeCleiton7{
+    border:solid 5px #ffffff;
     background-image: url("../../assets/equipe/Cleiton7.jpeg");
-
     min-height: 100px;
-    min-width: 100px;   
-    
+    min-width: 100px;      
     background-position: top;
     background-repeat: no-repeat;
     background-size: 100px 130px;
 }
-
+/* imagem bia no modal  */
 .equipebeatrizcarvalho97{
+    border:solid 5px #ffffff;
     background-image: url("../../assets/equipe/beatrizcarvalho97.jpeg");
-
     min-height: 100px;
-    min-width: 100px;   
-    
+    min-width: 100px;       
     background-position: top;
     background-repeat: no-repeat;
     background-size: 100px 130px;
 }
-
+/* imagem hugo no modal  */
 .equipeHgPBrito{
+    border:solid 5px #ffffff;
     background-image: url("../../assets/equipe/HgPBrito.jpg");
-
     min-height: 100px;
-    min-width: 100px;   
-    
+    min-width: 100px;       
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100px 100px;
 }
-
+/* maozinha do cursor ao passar nos links  */
 a{
     cursor: pointer;
+}
+/* detalhamento na responsividade */
+@media (max-width:1200px){
+    .formas-pagamento{                    
+        background-size: 300px 150px;
+        margin-left: 0 !important;
+    }   
+}
+@media (max-width:1060px){
+    .formas-pagamento{        
+        min-height: 100px;
+        min-width: 250px;          
+        background-size: 250px 125px;
+        
+    }   
+}
+@media (max-width:930px){
+    .formas-pagamento{   
+        background-size: 200px 100px;       
+    }   
+}
+@media (max-width:768px){
+    .formas-pagamento{
+        background-size: 150px 75px;       
+    }   
+}
+@media (max-width:767px){
+    .row > div{
+        margin-bottom: 1.5rem;
+    }
+    .formas-pagamento{        
+        min-height: 140px;
+        min-width: 350px;          
+        background-size: 350px 175px;
+        margin-left: 1.5rem !important;
+        
+    }   
+}
+@media (max-width:400px){    
+    .formas-pagamento{
+        background-size: 300px 150px;       
+    }   
+}
+@media (max-width:355px){    
+    .formas-pagamento{        
+        min-height: 100px;
+        min-width: 250px;          
+        background-size: 250px 125px;       
+    }   
+}
+@media (max-width:350px){    
+    .formas-pagamento{
+        background-size: 200px 100px;       
+    }   
 }
