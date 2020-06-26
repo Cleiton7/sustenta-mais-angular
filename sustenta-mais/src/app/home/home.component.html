@@ -29,7 +29,7 @@
 
 <section class="produtos">
     <div>
-        <h2 class="text-center mt-5">Ofertas</h2>
+        <h2 class="text-center mt-5 home-texto">Ofertas</h2>
     </div>
     <swiper class="container pt-5 pb-5" [config]="config">
         <div class="swiper-wrapper">
@@ -37,9 +37,9 @@
                 <div class="card produtos-card">
                     <img src="{{ produto.imagem }}" class="card-img-top" alt="...">
                     <div class="card-body d-flex flex-column align-items-center">
-                        <p class="card-title text-center">{{ produto.nome }}</p>
-                        <p class="card-text">{{ produto.preco | currency:'R$ ' }}</p>
-                        <a href="#" class="btn btn-outline-success">confira</a>
+                        <p class="card-title text-center home-texto">{{ produto.nome }}</p>
+                        <p class="card-text home-texto">{{ produto.preco | currency:'R$ ' }}</p>
+                        <a href="#" class="btn btn-outline-success home-texto">confira</a>
                     </div>
                 </div>
             </div>
