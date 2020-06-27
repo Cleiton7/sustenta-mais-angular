@@ -20,7 +20,7 @@
                     <span>{{produtos.preco | currency:'R$ '}}</span>
                     <span>Estoque: {{produtos.quantidade}}</span>
                 </div>
-                <div>
+                <div *ngIf="admin">
                     <button type="button" [routerLink]="['/editar-produto', produtos.id]">Editar</button>
                     <button type="button" [routerLink]="['/deletar-produto', produtos.id]">Apagar</button>
                 </div>

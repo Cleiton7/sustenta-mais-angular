@@ -4,4 +4,5 @@ export class UsuarioLogado {
     public email: string;
     public senha: string;
     public token: string;
+    public admin: string;
 }

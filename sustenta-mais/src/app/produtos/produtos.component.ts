@@ -10,6 +10,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class ProdutosComponent implements OnInit {
 
+  admin: string = localStorage.getItem('admin')
+
   produtos: Produtos = new Produtos
 
   nome: string
@@ -21,13 +23,6 @@ export class ProdutosComponent implements OnInit {
   public paginaAtual = 1;
   
   ngOnInit(): void{
-  
-    let token = localStorage.getItem('token')
-    if(token == null) {
-      alert('Faça login')
-      this.router.navigate(['/login'])
-    }
-
     this.getAllProdutos()
     
     let nome = this.route.snapshot.params['nome']

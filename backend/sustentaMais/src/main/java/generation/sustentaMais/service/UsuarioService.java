@@ -70,6 +70,7 @@ public class UsuarioService {
 		usuarioLogado.setCodigo(usuario.get().getId());
 		usuarioLogado.setNome(usuario.get().getNome());
 		usuarioLogado.setEmail(usuario.get().getEmail());
+		usuarioLogado.setAdmin(usuario.get().getAdmin());
 		usuarioLogado.setToken(authHeader);
 		
 		return Optional.ofNullable(usuarioLogado); // adiciona o usuarioLogado no objeto do tipo Optional

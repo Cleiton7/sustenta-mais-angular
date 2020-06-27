@@ -27,6 +27,8 @@ export class LoginComponent implements OnInit {
 
   alerta = false
 
+  admin: string = localStorage.getItem('admin')
+
   constructor(
     private router : Router,
     private locationPage: Location,
@@ -35,11 +37,10 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
     let item: string = localStorage.getItem('cadastroOk') // pega o valor do campo 'cadastroOk' no localStorage que foi adicionado ao fazer o cadastro e adiciona na variavel item
-
     // se esse If retornar true significa que houve um cadastro de usuario
     if(item == 'true') {
       this.alerta = true // variavel recebe true e será usada no HTML com *ngIf para mostrar uma mensagem ao usuario
-      localStorage.clear() // limpa o localStorage
+      localStorage.removeItem('cadastroOk') // limpa o localStorage
 
       // define o tempo de 3 segundos para chamar o metodo refresh()
       setTimeout(() => {
@@ -63,6 +64,7 @@ export class LoginComponent implements OnInit {
       this.usuarioLogado = resp
       localStorage.setItem('token', this.usuarioLogado.token) // retorna o atributo token de UsuarioLogado
       localStorage.setItem('nome', this.usuarioLogado.nome) // retorna o atributo nome de UsuarioLogado
+      localStorage.setItem('admin', this.usuarioLogado.admin) // retorna o atributo admin de UsuarioLogado
       this.router.navigate(['produtos']); // após logar o usuario é redirecionado para a pagina de produtos
     }, err => {
       this.erroLogin = true // varialvel recebe true para ser usada no HTML
