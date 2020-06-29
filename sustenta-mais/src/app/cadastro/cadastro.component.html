@@ -1,8 +1,11 @@
 <section class="cadastro height-min pb-5 pt-5">
     
     <div class="formulario d-flex flex-column justify-content-center col-md-12">
-        <div class="mb-5 mt-5">
+        <div class="mb-5 mt-5" *ngIf="!token">
             <h2 class="formulario-titulo text-center">Preencha o formulário</h2>
+        </div>
+        <div class="mb-5 mt-5" *ngIf="token">
+            <h2 class="formulario-titulo text-center">Cadastrar Usuário</h2>
         </div>
         <div class="col-md-12">
             <div class="form-group col-md-12" [class.has-error]="!nome.valid && nome.touched">

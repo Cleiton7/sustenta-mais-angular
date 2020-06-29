@@ -15,6 +15,7 @@ export class CadastrarProdutoComponent implements OnInit {
   constructor(private produtoService : ProdutosService, private router : Router) { }
 
   ngOnInit(): void {
+    this.verificaAtenticacao()
   }
 
   cadastroProduto() {
@@ -22,6 +23,14 @@ export class CadastrarProdutoComponent implements OnInit {
       this.produto = resp
       this.router.navigate(["produtos"])
     })
+  }
+
+  verificaAtenticacao() {
+    let admin = localStorage.getItem('admin')
+
+    if(admin != 'true') {
+      this.router.navigate(['produtos'])
+    }
   }
 
 }

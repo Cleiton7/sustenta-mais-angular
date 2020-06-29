@@ -39,7 +39,7 @@
                     <div class="card-body d-flex flex-column align-items-center">
                         <p class="card-title text-center home-texto">{{ produto.nome }}</p>
                         <p class="card-text home-texto">{{ produto.preco | currency:'R$ ' }}</p>
-                        <a href="#" class="btn btn-outline-success home-texto">confira</a>
+                        <a href="#" class="btn btn-sustenta home-texto">confira</a>
                     </div>
                 </div>
             </div>
@@ -50,4 +50,16 @@
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
     </swiper>
+</section>
+
+<section class="newsletter d-flex flex-column align-items-center">
+    <div>
+        <h2 class="home-titulo newsletter-titulo mt-3">Assine nossa newsletter</h2>
+    </div>
+
+    <div class="newsletter-campos d-flex align-items-center h-100">
+        <input class="newsletter-input home-texto" type="text" placeholder="nome">
+        <input class="newsletter-input home-texto ml-4 mr-4" type="text" placeholder="e-mail">
+        <button class="newsletter-btn home-texto" type="button">Enviar</button>
+    </div>
 </section>

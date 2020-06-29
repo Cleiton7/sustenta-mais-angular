@@ -11,7 +11,7 @@
                 </div>
                 <div class="card-body text-center d-flex flex-column justify-content-center">
                     <span class="form-text m-0 text-muted mb-3 text-monospace">{{produto.nome}}</span>
-                    <span>{{ produto.preco }}</span>
+                    <span>{{ produto.preco | currency:'R$ ' }}</span>
                     <span>Estoque: {{ produto.quantidade }}</span>
                 </div>
             </div>

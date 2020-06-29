@@ -25,3 +25,41 @@ swiper {
 .swiper-button-prev {
     color: #658726;
 }
+
+/* Estilização da newsletter */
+
+.newsletter {
+    background-color: #658726;
+    height: 200px;
+    width: 100vw;
+}
+
+.newsletter-titulo {
+    color: #FFF;
+}
+
+.newsletter-campos > input,
+.newsletter-campos > button {
+    height: 45px;
+}
+
+.newsletter-campos {
+    width: 60%;
+}
+
+.newsletter-campos > input {
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px;
+    width: 50%;
+}
+
+.newsletter-campos > button {
+    padding: 10px;
+    width: 80px;
+}
+
+.newsletter-btn {
+    background-color: #FFF;
+    border-radius: 5px;
+}

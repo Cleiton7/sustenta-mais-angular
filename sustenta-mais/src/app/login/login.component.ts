@@ -47,6 +47,7 @@ export class LoginComponent implements OnInit {
         this.refresh()
       }, 3000)
     }
+    this.verificaRota()
   }
 
   // limpa a mensagem mostrada na tela de login após o cadastro
@@ -65,9 +66,17 @@ export class LoginComponent implements OnInit {
       localStorage.setItem('token', this.usuarioLogado.token) // retorna o atributo token de UsuarioLogado
       localStorage.setItem('nome', this.usuarioLogado.nome) // retorna o atributo nome de UsuarioLogado
       localStorage.setItem('admin', this.usuarioLogado.admin) // retorna o atributo admin de UsuarioLogado
+      location.reload()
       this.router.navigate(['produtos']); // após logar o usuario é redirecionado para a pagina de produtos
     }, err => {
       this.erroLogin = true // varialvel recebe true para ser usada no HTML
     })
+  }
+
+  verificaRota() {
+    let token = localStorage.getItem('token')
+    if(token != null){
+      this.router.navigate(['produtos'])
+    }
   }
 }

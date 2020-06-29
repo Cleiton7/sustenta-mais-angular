@@ -24,7 +24,7 @@ export class ListaUsuariosComponent implements OnInit {
 
     if(item == 'true') {
       this.alerta = true
-      localStorage.clear()
+      localStorage.removeItem('delOk')
 
       setTimeout(() => {
         this.refresh()

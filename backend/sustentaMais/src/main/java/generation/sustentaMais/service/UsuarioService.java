@@ -22,6 +22,7 @@ public class UsuarioService {
 	@Autowired
 	private UsuarioRepository usuarioRepository;
 	
+	
 	// Recebe objeto do tipo usuario para ser cadastrado e o retorna da model após ser cadastrado
 	public Usuario CadastrarUsuario(Usuario usuario) {
 		// Instancia o objeto de codificação da senha	
@@ -41,6 +42,7 @@ public class UsuarioService {
 		// chama a repository que salva o usuario no banco
 		return usuarioRepository.save(usuario);
 	}
+	
 	
 	// esse metodo recebe os dados de login e retorna os dados do usuario logado
 	public Optional<UsuarioLogado> Logar(UsuarioLogin usuarioLogin) {

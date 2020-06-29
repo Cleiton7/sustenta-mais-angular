@@ -15,7 +15,7 @@
             </div>
 
             <div class="form-group col-md-12">
-                <label class="formulario-label" for="descricao">Descricao</label>
+                <label class="formulario-label" for="descricao">Descrição</label>
                 <input type="text" class="form-control formulario-input" id="descricao" placeholder=" Digite a descricao"
                     do produto [(ngModel)]="produto.descricao" required #descricao="ngModel">
                 <div class="alert alert-danger mt-2" *ngIf="!descricao.valid && descricao.touched">
@@ -53,7 +53,7 @@
         </div>
 
         <div class="btn-confirmar mb-5 mt-5 col-md-12 d-flex justify-content-center">
-            <button type="button" class="btn-sustenta col-md-6" (click)="cadastroProduto()">Cadastrar Produto</button>
+            <button type="button" class="btn-sustenta" (click)="cadastroProduto()">Cadastrar Produto</button>
         </div>
 
     </div>
