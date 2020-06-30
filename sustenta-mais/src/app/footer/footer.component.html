@@ -1,155 +1,147 @@
-<footer>
+<!-- usado bootstrap para o layaut e estilização  -->
+<footer class="container-fluid py-2 px-4 rodape m-0">
+    <a class="logo outnone my-2 navbar-brand mx-auto" routerLink='/home'></a>
+    <nav class="navbar navbar-expand-lg text-dark bg-light rounded-lg px-5 w-100 d-flex justify-content-between">
+        <div class="row w-100 d-flex justify-content-center  align-items-stretch">
+            <!-- coluna de institucional  -->
+            <div class="col-md-3 d-flex flex-column align-items-center p-1 justify-content-start">
+                <h5>Institucional</h5>
+                <a class="nav-link outnone" routerLink='home'>Home</a>
+                <a class="nav-link outnone" routerLink='produtos'>Produtos</a>
+                <a class="nav-link outnone text-center" routerLink='sobre'>Sobre nós</a>
+                <a class="nav-link outnone text-center" data-toggle="modal" data-target="#ModalEquipe">Conheça a
+                    Equipe</a>
+            </div>
+            <!-- coluna centro de atendimento  -->
+            <div class="col-md-3 d-flex flex-column align-items-center text-center">
+                <h5>Centro de atendimento</h5>
+                <a class="nav-link outnone" routerLink='faq'>FAQ</a>
+                <a class="nav-link outnone text-center" routerLink='politica'>Política de Troca e Devolução</a>
+                <a class="nav-link outnone" routerLink='contato'>Contato</a>
+            </div>
+            <!-- coluna formas de pagamento  -->
+            <div class="col-md-4 d-flex flex-column align-items-center">
+                <h5 class="text-center">Formas de pagamento</h5>
+                <span class="formas-pagamento ml-4"></span>
+            </div>
+            <!-- colunas acompanhe  -->
+            <div class="col-md-2 d-flex flex-column  align-items-center">
+                <h5>Acompanhe</h5>
+                <div class="d-flex justify-content-around redes-sociais">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <fa-icon [icon]="faInstagram" class="fa-2x"></fa-icon>
+                    </a>
 
-    <div class="linha1 pt-5">
+                    <a href="https://www.facebook.com/" class="ml-2 mr-2" target="_blank">
+                        <fa-icon [icon]="faFacebook" class="fa-2x"></fa-icon>
+                    </a>
 
-
-
-        <div class="d-flex justify-content-center">
-
-            <div class="linha3 p-3 rounded-left d-flex justify-content-around">
-                <div class="d-flex">
-                    <a class="logo my-auto navbar-brand mx-auto" routerLink='/home'></a>
-                </div>
-                <div>
-                    <h3>Instucional</h3>
-                    <a class="nav-link" routerLink='home'>Home</a>
-                    <a class="nav-link" routerLink='produtos'>Produtos</a>
-                    <a class="nav-link" routerLink='sobre'>Sobre nós</a>
-                    <a class="nav-link" routerLink='#' data-toggle="modal" data-target="#exampleModalCenter">Conheça a
-                        Equipe</a>
-                </div>
-
-                <div>
-                    <h3>Institucional</h3>
-                    <a class="nav-link" routerLink='faq'>FAQ</a>
-                    <a class="nav-link" routerLink='contato'>Contato</a>
-                    <a class="nav-link" routerLink='politica'>Política de Troca e Devolução</a>
-                </div>
-
-                <div class="formas-pagamento">
-                    <h3 class="text-center">Formas de pagamento</h3>
-                    <div>
-                    </div>
-                </div>
-
-                <div class="redes-sociais">
-                    <h3>Acompanhe</h3>
-                    <div class="d-flex justify-content-around">
-                        <a href="https://www.instagram.com/" target="_blank">
-                            <fa-icon [icon]="faInstagram" class="fa-2x"></fa-icon>
-                        </a>
-
-                        <a href="https://www.facebook.com/" class="ml-2 mr-2" target="_blank">
-                            <fa-icon [icon]="faFacebook" class="fa-2x"></fa-icon>
-                        </a>
-
-                        <a href="https://twitter.com/explore" target="_blank">
-                            <fa-icon [icon]="faTwitter" class="fa-2x"></fa-icon>
-                        </a>
-                    </div>
+                    <a href="https://twitter.com/explore" target="_blank">
+                        <fa-icon [icon]="faTwitter" class="fa-2x"></fa-icon>
+                    </a>
                 </div>
             </div>
         </div>
+    </nav>
+    <!-- targeta do Copyright  -->
+    <div class="footer-copyright text-center mt-2 py-1 ">
+        <span class="text-dark"> © 2020 Copyright - </span>
+        <a class="text-dark" href="https://brasil.generation.org" target="blank">brasil.generation.org</a>
     </div>
 
-    <div class="linha2 w-100 row justify-content-md-center mx-0 p-1">
-        <div class="col-12 footer-copyright text-center py-2 ">
-            <span class="text-dark"> © 2020 Copyright - </span>
-            <a class="text-dark" href="https://brasil.generation.org" target="blank">brasil.generation.org</a>
-        </div>
-    </div>
-
-
-
-
-    <!-- Modal Equipe-->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+    <!-- Modal Conheça a equipe-->
+    <div class="modal fade" id="ModalEquipe" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal-header  justify-content-center">
-                    <h5 class="modal-title" id="exampleModalCenterTitle">A EQUIPE SUSTENTA+</h5>
+                <div class="modal-header">
+                    <h3 class="modal-title w-100 text-center" id=" exampleModalLabel">Equipe SUSTENTA+</h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-
-                    <div class="accordion" id="accordionExample">
+                    <!-- card sobre o Estevam  -->
+                    <div class="accordion" id="accordionEquipe">
                         <div class="card">
-                            <div class="card-header" id="headingOne">
-                                <h2 class="mb-0 d-flex align-items-center">
-                                    <span class="equipeEstevamboccuggi my-auto rounded-lg"></span>
-                                    <button class="btn btn-link" type="button" data-toggle="collapse"
-                                        data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <div class="card-header" id="headingEstevam">
+                                <h2 class="mb-0">
+                                    <button
+                                        class="btn outnone btn-block d-flex align-items-center justify-content-between"
+                                        type="button" data-toggle="collapse" data-target="#collapseEstevam"
+                                        aria-expanded="true" aria-controls="collapseEstevam">
+                                        <span class="equipeEstevamboccuggi my-1 navbar-brand rounded-lg"></span>
                                         Estevam Boccuggi Junior
                                     </button>
                                 </h2>
                             </div>
-
-                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-                                data-parent="#accordionExample">
+                            <div id="collapseEstevam" class="collapse" aria-labelledby="headingEstevam"
+                                data-parent="#accordionEquipe">
                                 <div class="card-body">
                                     Desenvolvedor fullstack java jr, formado pela Generation e desde pequeno sou
                                     apaixonado por tecnologia, pois esta área me proporcionou conquistar muitos sonhos,
                                     e um deles foi superar os meus limites. Sou persistente, comunicativo, dedicado e
                                     amante do aprendizado.
 
-                                    <div class="d-flex justify-content-around">
-                                        <a href="https://br.linkedin.com/in/estevam-boccuggi-junior-71a048123"
-                                            target="_blank">
-                                            <fa-icon [icon]="faLinkedin" class="fa-2x"></fa-icon>
+                                    <div class="mt-2 d-flex justify-content-around redesProf">
+                                        <a href="https://github.com/Estevamboccuggi" target="_blank">
+                                            <fa-icon [icon]="faGithub" class="fa-3x"></fa-icon>
                                         </a>
 
-                                        <a href="https://github.com/Estevamboccuggi" target="_blank">
-                                            <fa-icon [icon]="faGithub" class="fa-2x"></fa-icon>
+                                        <a href="https://br.linkedin.com/in/estevam-boccuggi-junior-71a048123/"
+                                            target="_blank">
+                                            <fa-icon [icon]="faLinkedin" class="fa-3x"></fa-icon>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- card sobre a Rafaela  -->
                         <div class="card">
-                            <div class="card-header" id="headingTwo">
-                                <h2 class="mb-0 d-flex align-items-center">
-                                    <span class="equipeRafaela1997 my-auto rounded-lg"></span>
-                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <div class="card-header" id="headingRafaela">
+                                <h2 class="mb-0">
+                                    <button
+                                        class="btn outnone btn-block d-flex align-items-center justify-content-between"
+                                        type="button" data-toggle="collapse" data-target="#collapseRafaela"
+                                        aria-expanded="true" aria-controls="collapseRafaela">
+                                        <span class="equipeRafaela1997 my-1 navbar-brand rounded-lg"></span>
                                         Rafaela Ramos Santana
                                     </button>
                                 </h2>
                             </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                data-parent="#accordionExample">
+                            <div id="collapseRafaela" class="collapse" aria-labelledby="headingRafaela"
+                                data-parent="#accordionEquipe">
                                 <div class="card-body">
                                     Desenvolvedora jr formada pela Generation Brasil e pela Reprograma. Em busca de uma
                                     colocação profissional na área de tecnologia com
                                     o objetivo de aplicar e desenvolver as minhas habilidades.
 
-                                    <div class="d-flex justify-content-around">
-                                        <a href="https://www.linkedin.com/in/rafaela-ramos-santana" target="_blank">
-                                            <fa-icon [icon]="faLinkedin" class="fa-2x"></fa-icon>
+                                    <div class="mt-2 d-flex justify-content-around redesProf">
+                                        <a href="https://github.com/Rafaela1997" target="_blank">
+                                            <fa-icon [icon]="faGithub" class="fa-3x"></fa-icon>
                                         </a>
 
-                                        <a href="https://github.com/Rafaela1997" target="_blank">
-                                            <fa-icon [icon]="faGithub" class="fa-2x"></fa-icon>
+                                        <a href="https://www.linkedin.com/in/rafaela-ramos-santana/" target="_blank">
+                                            <fa-icon [icon]="faLinkedin" class="fa-3x"></fa-icon>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- card sobre o Cleiton  -->
                         <div class="card">
-                            <div class="card-header" id="headingThree">
-                                <h2 class="mb-0 d-flex align-items-center">
-                                    <span class="equipeCleiton7 my-auto rounded-lg"></span>
-                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                        data-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
+                            <div class="card-header" id="headingCleiton">
+                                <h2 class="mb-0">
+                                    <button
+                                        class="btn outnone btn-block d-flex align-items-center justify-content-between"
+                                        type="button" data-toggle="collapse" data-target="#collapseCleiton"
+                                        aria-expanded="true" aria-controls="collapseCleiton">
+                                        <span class="equipeCleiton7 my-1 navbar-brand rounded-lg"></span>
                                         Cleiton Souza Andrade
                                     </button>
                                 </h2>
                             </div>
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                                data-parent="#accordionExample">
+                            <div id="collapseCleiton" class="collapse" aria-labelledby="headingCleiton"
+                                data-parent="#accordionEquipe">
                                 <div class="card-body">
                                     Desenvolvedor Web Java Jr formado pela Generation Brasil, cursou dois anos de
                                     Análise de Sistemas onde se identificou com a área de desenvolvimento de software.
@@ -157,30 +149,33 @@
                                     tenta se acostumar com a grande agitação da cidade paulista. Ama jogar bola e ama se
                                     conectar com a natureza.
 
-                                    <div class="d-flex justify-content-around">
-                                        <a href="https://www.linkedin.com/in/cleiton-souza-andrade" target="_blank">
-                                            <fa-icon [icon]="faLinkedin" class="fa-2x"></fa-icon>
+                                    <div class="mt-2 d-flex justify-content-around redesProf">
+                                        <a href="https://github.com/Cleiton7" target="_blank">
+                                            <fa-icon [icon]="faGithub" class="fa-3x"></fa-icon>
                                         </a>
 
-                                        <a href="https://github.com/Cleiton7" target="_blank">
-                                            <fa-icon [icon]="faGithub" class="fa-2x"></fa-icon>
+                                        <a href="https://www.linkedin.com/in/cleiton-souza-andrade/" target="_blank">
+                                            <fa-icon [icon]="faLinkedin" class="fa-3x"></fa-icon>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- card sobre a bia  -->
                         <div class="card">
-                            <div class="card-header" id="headingFour">
-                                <h2 class="mb-0 d-flex align-items-center">
-                                    <span class=" equipebeatrizcarvalho97 my-auto rounded-lg"></span>
-                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                        data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <div class="card-header" id="headingBia">
+                                <h2 class="mb-0">
+                                    <button
+                                        class="btn outnone btn-block d-flex align-items-center justify-content-between"
+                                        type="button" data-toggle="collapse" data-target="#collapseBia"
+                                        aria-expanded="true" aria-controls="collapseBia">
+                                        <span class="equipebeatrizcarvalho97 my-1 navbar-brand rounded-lg"></span>
                                         Beatriz Carvalho da Costa
                                     </button>
                                 </h2>
                             </div>
-                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
-                                data-parent="#accordionExample">
+                            <div id="collapseBia" class="collapse" aria-labelledby="headingBia"
+                                data-parent="#accordionEquipe">
                                 <div class="card-body">
                                     Sou uma garota que não para! Sou alguém determinada e que busca ver sempre o lado
                                     positivo das situações da vida. Monotonia não combina comigo, sou alguém que esta em
@@ -188,51 +183,56 @@
                                     das pessoas e sei que estou no caminho certo para tornar isso real. Desde o momento
                                     em que conheci o mundo da programação, ele tem roubado meu coração.
 
-                                    <div class="d-flex justify-content-around">
-                                        <a href="https://www.linkedin.com/in/beatrizcarvalhodacosta" target="_blank">
-                                            <fa-icon [icon]="faLinkedin" class="fa-2x"></fa-icon>
+                                    <div class="mt-2 d-flex justify-content-around redesProf">
+                                        <a href="https://github.com/beatrizcarvalho97" target="_blank">
+                                            <fa-icon [icon]="faGithub" class="fa-3x"></fa-icon>
                                         </a>
 
-                                        <a href="https://github.com/beatrizcarvalho97" target="_blank">
-                                            <fa-icon [icon]="faGithub" class="fa-2x"></fa-icon>
+                                        <a href="https://www.linkedin.com/in/beatrizcarvalhodacosta/" target="_blank">
+                                            <fa-icon [icon]="faLinkedin" class="fa-3x"></fa-icon>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- card sobre o hugo  -->
                         <div class="card">
-                            <div class="card-header" id="headingFive">
-                                <h2 class="mb-0 d-flex align-items-center">
-                                    <span class="equipeHgPBrito my-auto rounded-lg"></span>
-                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                        data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            <div class="card-header" id="headingHg">
+                                <h2 class="mb-0">
+                                    <button
+                                        class="btn outnone btn-block d-flex align-items-center justify-content-between"
+                                        type="button" data-toggle="collapse" data-target="#collapseHg"
+                                        aria-expanded="true" aria-controls="collapseHg">
+                                        <span class="equipeHgPBrito my-1 navbar-brand rounded-lg"></span>
                                         Hugo Pereira de Brito
                                     </button>
                                 </h2>
                             </div>
-                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
-                                data-parent="#accordionExample">
+                            <div id="collapseHg" class="collapse" aria-labelledby="headingHg"
+                                data-parent="#accordionEquipe">
                                 <div class="card-body">
                                     Sou um nerd que se encontrou na área da tecnologia e desenvolvimento, desde então
                                     amo o que faço, me dedico a aprender, e nas horas de lazer gosto de estar com a
-                                    família e jogar uma boa aventura de RPG de mesa.
+                                    família e jogar uma boa aventura de RPG de mesa
 
-                                    <div class="d-flex justify-content-around">
-                                        <a href="https://www.linkedin.com/in/hgpbrito" target="_blank">
-                                            <fa-icon [icon]="faLinkedin" class="fa-2x"></fa-icon>
+                                    <div class="mt-2 d-flex justify-content-around redesProf">
+                                        <a href="https://github.com/HgPBrito" target="_blank">
+                                            <fa-icon [icon]="faGithub" class="fa-3x"></fa-icon>
                                         </a>
 
-                                        <a href="https://github.com/HgPBrito" target="_blank">
-                                            <fa-icon [icon]="faGithub" class="fa-2x"></fa-icon>
+                                        <a href="https://www.linkedin.com/in/HgPBrito/" target="_blank">
+                                            <fa-icon [icon]="faLinkedin" class="fa-3x"></fa-icon>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
+
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
 </footer>

@@ -1,1 +1,27 @@
-<p>deletar-produto works!</p>
+<div class="container col-md-12 mt-5 ">
+    <div class="card-title col-md-3">
+        <h5 class="d-flex justify-content-center">Deletar Produto</h5>
+    </div>
+
+    <div class="col-md-3 mt-5">
+        <div class="col">
+            <div class="card card-sustenta mb-3">
+                <div class="card-header">
+                    <img class="card-img-top" src={{produto.imagem}} alt="Produto á venda">
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-center">
+                    <span class="form-text m-0 text-muted mb-3 text-monospace">{{produto.nome}}</span>
+                    <span>{{ produto.preco }}</span>
+                    <span>Estoque: {{ produto.quantidade }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h5 class="text-monospace text-center mb-5">Tem certeza que deseja apagar esse produto?</h5>
+    </div>
+    <div class="col-md-12 mb-5 d-flex justify-content-center">
+        <button class="btn btn-outline-danger mr-3" (click)="deletarProduto()">Sim</button>
+        <button class="btn btn-outline-success" (click)="naoDeletar()">Não</button>
+    </div>
+</div>

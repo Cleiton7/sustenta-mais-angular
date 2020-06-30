@@ -14,6 +14,10 @@ export class CadastroComponent implements OnInit {
 
   confirmaSenha = "";
 
+  alerta: boolean = false
+
+  cadastroOk: boolean = false;
+
   constructor(
     private usuarioService: UsuariosService,
     private router: Router
@@ -22,16 +26,20 @@ export class CadastroComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // metodo para validar a confirmação de senha no formulario de cadastro
   validaSenha(){
     if(this.usuario.senha == this.confirmaSenha){
       this.cadastroUsuario()
     }
   }
 
+  // metodo para cadastro de usuario chamando o EndPoint postUsuario() da service
   cadastroUsuario() {
     this.usuarioService.postUsuario(this.usuario).subscribe((resp: Usuarios) => {
       this.usuario = resp
-      this.router.navigate(["lista-usuarios"])
+      this.cadastroOk = true
+      this.router.navigate(["login"]) // após o cadastro o usuario é redirecionado para a tela de login
+      localStorage.setItem("cadastroOk", this.cadastroOk.toString()) // o valor booleano da variavel 'cadastroOk' é adicionado no localStorage em forma de string para ser usado na tela de login
     })
   }
 }

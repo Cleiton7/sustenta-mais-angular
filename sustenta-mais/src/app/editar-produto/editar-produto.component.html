@@ -1,1 +1,57 @@
-<p>editar-produto works!</p>
+<div class="container">
+    <section class="container-xl height-min col-md-12 d-flex flex-column justify-content-center">
+        <div class="col-md-12 mb-3 mt-3 d-flex justify-content-center">
+            <h2>Editar Produto</h2>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <div class="col-md-6">
+                <div class="form-group col-md-12" [class.has-error]="!nome.valid && nome.touched">
+                    <label class="control-label" for="nome">Nome do produto</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Digite o nome do produto" required [(ngModel)]="produto.nome" #nome="ngModel">
+                    <div class="alert alert-danger mt-2" *ngIf="!nome.valid && nome.touched">
+                        Nome é obrigatório
+                    </div>
+                </div>
+
+                <div class="form-group col-md-12">
+                    <label for="descricao">Descrição</label>
+                    <textarea type="text" class="form-control" id="descricao" placeholder="Digite a descrição do produto" required [(ngModel)]="produto.descricao" #descricao="ngModel">
+                    </textarea>
+                    <div class="alert alert-danger mt-2" *ngIf="!descricao.valid && descricao.touched">
+                        Descrição é obrigatório
+                    </div>
+                </div>
+
+                <div class="form-group col-md-12">
+                    <label for="preco">Preço</label>
+                    <input type="text" class="form-control" id="preco" placeholder="Digite o preço do produto (R$ 9.99)" required [(ngModel)]="produto.preco" #preco="ngModel">
+                    <div class="alert alert-danger mt-2" *ngIf="!preco.valid && preco.touched">
+                        Preço é obrigatório
+                    </div>
+                </div>
+
+                <div class="form-group col-md-12">
+                    <label for="imagem">Imagem</label>
+                    <input type="text" class="form-control" id="imagem" placeholder="Informe a URL da imagem" required [(ngModel)]="produto.imagem" #imagem="ngModel">
+                    <div class="alert alert-danger mt-2" *ngIf="!imagem.valid && imagem.touched">
+                        Imagem é obrigatório
+                    </div>
+                </div>
+
+                    <div class="form-group col-md-12">
+                        <label for="quantidade">Quantidade</label>
+                        <input type="number" class="form-control" id="quantidade" placeholder="Quantidade de produto disponivel" required [(ngModel)]="produto.quantidade" #quantidade="ngModel">
+                        <div class="alert alert-danger mt-2" *ngIf="!quantidade.valid && quantidade.touched">
+                            Quantidade é obrigatório
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 d-flex justify-content-center">
+                        <button class="btn btn-outline-success mr-3" (click)="salvarProduto()">Atualizar</button>
+                        <button class="btn btn-outline-danger" (click)="cancelar()">Cancelar</button>
+                    </div>
+            </div>
+        </div>
+    </section>
+</div>

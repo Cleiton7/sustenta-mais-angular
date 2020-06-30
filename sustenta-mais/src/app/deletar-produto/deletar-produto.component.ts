@@ -10,6 +10,7 @@ import { ProdutosService } from '../service/produtos.service';
 })
 export class DeletarProdutoComponent implements OnInit {
 
+
   // Instancia um novo objeto do tipo Produtos
   produto : Produtos = new Produtos
   delOk: boolean = false;
@@ -23,6 +24,13 @@ export class DeletarProdutoComponent implements OnInit {
     let id: number = this.route.snapshot.params['id']
     // chama a função que pega o objeto através do Id capturado anteriormente
     this.findById(id)
+
+    let token = localStorage.getItem('token')
+
+    if(token == null) {
+      alert("Faça login para cadastrar um produto")
+      this.router.navigate(['/login'])
+    }
   }
 
   // método responsável por trazer do Banco de Dados o objeto tipo Produto que corresponde ao Id passado
@@ -36,7 +44,7 @@ export class DeletarProdutoComponent implements OnInit {
   }
 
   // método para apagar o produto que foi clicado
-  apagarProduto() {
+  deletarProduto() {
     // usando o produtoService que foi declarado no nosso construtor invocamos o endpoint 'deleteProduto' da nossa service
     this.produtoService.deleteProduto(this.produto.id).subscribe(() => {
       this.delOk = true // seta um novo valor para a variavel 'delOk' criada na linha 15
@@ -45,7 +53,7 @@ export class DeletarProdutoComponent implements OnInit {
     })
   }
 
-  naoApagar(){
+  naoDeletar(){
     this.router.navigate(['/produtos']) // redireciona para a lista de produtos caso escolha nao apagar o produto
   }
 }

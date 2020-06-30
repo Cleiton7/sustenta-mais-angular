@@ -1,0 +1,27 @@
+
+/* ESTILIZAÇÃO DOS CARDS */
+
+.produtos {
+    height: 500px;
+    width: 100vw;
+}
+
+swiper {
+    height: 90%;
+    width: 90%;
+}
+
+.produtos-card {
+    height: 50%;
+    width: 100%;
+}
+
+.produtos-card img {
+    height: 100%;
+    width: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #658726;
+}
