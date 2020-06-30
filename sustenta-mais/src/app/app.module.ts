@@ -23,7 +23,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SobreComponent } from './sobre/sobre.component';
 import { CadastrarProdutoComponent } from './cadastrar-produto/cadastrar-produto.component';
 import { EditarProdutoComponent } from './editar-produto/editar-produto.component';
-import { DeletarProdutoComponent } from './deletar-produto/deletar-produto.component'
+import { DeletarProdutoComponent } from './deletar-produto/deletar-produto.component';
+import { NotfoundComponent } from './notfound/notfound.component'
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { DeletarProdutoComponent } from './deletar-produto/deletar-produto.compo
     SobreComponent,
     CadastrarProdutoComponent,
     EditarProdutoComponent,
-    DeletarProdutoComponent
+    DeletarProdutoComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,

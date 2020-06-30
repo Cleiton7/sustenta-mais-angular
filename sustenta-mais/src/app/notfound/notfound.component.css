@@ -1,0 +1,43 @@
+.parallax {
+    background-image: url('../../assets/notfond/deserto.jpg');
+
+    min-height: 79vh;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    font-family: 'Comfortaa', cursive;
+    font-weight: bolder; 
+    color:#ffffff;
+    font-size: 10vh;
+    margin-bottom: -10vh;
+}
+
+.tumbleweed{    
+    background-image: url("../../assets/notfond/tumbleweed.png");
+    min-height: 100px;
+    min-width: 100px;     
+    background-position: center;
+    background-repeat: no-repeat;    
+    background-size: 100px 100px;     
+    position: relative;
+    transform: rotate(360deg);
+    animation: bounce 3s ease infinite;
+    
+}
+
+
+@keyframes bounce {
+    
+    0% {transform: scale(1,1) translateY(0) rotate(6.2deg);}
+    5%{transform: scale(1.1,0.9) translateY(0)rotate(25.7deg);}
+    25%{transform: scale(0.9,1.1) translateY(-200px)rotate(128.6deg);} 
+    50%{transform: scale(1.1,0.9) translateY(0)rotate(257.2deg);} 
+    60%{transform: scale(0.9,1.1) translateY(-40px)rotate(308.6deg);}  
+    70%{transform: scale(1.1,0.9) translateY(0px)rotate(360deg);} 
+    100%{transform: scale(1,1) translateY(0) rotate(360deg);}
+}

@@ -14,6 +14,7 @@ import { SobreComponent } from './sobre/sobre.component';
 import { CadastrarProdutoComponent } from './cadastrar-produto/cadastrar-produto.component';
 import { EditarProdutoComponent } from './editar-produto/editar-produto.component';
 import { DeletarProdutoComponent } from './deletar-produto/deletar-produto.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -31,7 +32,8 @@ const routes: Routes = [
   { path: 'cadastrar-produto', component: CadastrarProdutoComponent },
   { path: 'editar-produto/:id', component: EditarProdutoComponent },
   { path: 'deletar-produto/:id', component: DeletarProdutoComponent },
-  { path: 'produtos/nome/:nome', component: ProdutosComponent }
+  { path: 'produtos/nome/:nome', component: ProdutosComponent },
+  { path: '**', component: NotfoundComponent }
 ];
 
 @NgModule({
