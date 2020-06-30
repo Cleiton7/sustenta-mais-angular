@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit {
   produtoBarato = []
 
   sustentabilidade : String = "assets/images/sustentabilidade.jpg"
-  sustentabilidadeDois : String = "assets/images/sustentabilidade-dois.jpg"
+  sustentabilidadeDois : String = "assets/images/sustentabilidade-dois.png"
   sustentabilidadeTres : String = "assets/images/sustentabilidade-tres.jpg"
 
   constructor(
