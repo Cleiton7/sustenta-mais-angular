@@ -9,7 +9,7 @@
             <fa-icon [icon]="faWater"></fa-icon>
         </button>
         <!-- logo com hover no css para mudar de cor -->
-        <a class="logo navbar-brand ml-5 " routerLink='/home'></a>
+        <a class="logo outnone navbar-brand ml-5 " routerLink='/home'></a>
 
         <!-- div para ocultar quando menu hamburguer estiver ativo -->
         <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
@@ -24,14 +24,18 @@
                     <div class="botoes-menu d-flex align-items-center" id="botoes-menu">
                         <!-- Se não houver usuario logado esse *ngIf retornará true e assim mostrará os botões de Login e Cadastre-se -->
                         <div *ngIf="auth.btnLogin()">
-                            <button class="btn-sustenta mr-2 " type="button" routerLink="login">Login</button>
-                            <button class="btn-sustenta mx-2 " type="button" routerLink="cadastro">Cadastre-se</button>
+                            <button class="btn-sustenta outnone mr-2 btn-login" type="button"
+                                routerLink="login">Login</button>
+                            <button class="btn-sustenta outnone mx-2 btn-cadastrar" type="button"
+                                routerLink="cadastro">Cadastre-se</button>
                         </div>
                         <!-- Se houver usuario logado esse *ngIf retornará true e assim mostrará o botão de sair -->
-                        
-                        
+
+
                         <div class="dropdown" *ngIf="auth.btnSairAdmin()">
-                            <button class="btn-sustenta ml-2 dropdown-toggle" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Olá, {{ nameUser }}</button>
+                            <button class="btn-sustenta ml-2 dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Olá,
+                                {{ nameUser }}</button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <a class="dropdown-item" routerLink="/cadastrar-produto">Cadastrar produto</a>
                                 <a class="dropdown-item" routerLink="/lista-usuarios">Usuários cadastrados</a>
@@ -39,7 +43,9 @@
                             </div>
                         </div>
                         <div class="dropdown" *ngIf="auth.btnSair()">
-                            <button class="btn-sustenta ml-2 dropdown-toggle" type="button"  id="dropdownMenuButtonDois" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Olá, {{ nome }}</button>
+                            <button class="btn-sustenta ml-2 dropdown-toggle" type="button" id="dropdownMenuButtonDois"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Olá,
+                                {{ nome }}</button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButtonDois">
                                 <a class="dropdown-item" (click)="sair()">Sair</a>
                             </div>

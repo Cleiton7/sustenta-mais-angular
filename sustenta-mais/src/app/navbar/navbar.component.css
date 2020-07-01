@@ -20,12 +20,7 @@
 }
 /* modificação da cor do logo quando o mouse passa em cima  */
 .logo:hover{
-    background-image: url("../../assets/logos/logo_aberto_preto.png");    
-    min-height: 67px;
-    min-width: 200px;   
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 150px 150px;
+    background-image: url("../../assets/logos/logo_aberto_preto.png");        
 }
 /* estilização do texto dos campos do menu  */
 .list{
@@ -46,6 +41,16 @@
 
 /* detalhamento na responsividade */
 
+@media (max-width:1098px){
+    .btn-login{
+        margin-left: 8px;
+    }
+    .btn-cadastrar{
+        margin-top: 10px;    
+    }
+}
+
+
 @media (max-width:454px){
 
     .logo,.logo:hover{
@@ -55,4 +60,19 @@
     .hamburguer{
         margin-top: 15px;
     }
+}
+
+@media (max-width:376px){
+    .logo{
+        min-height: 50px;
+        min-width: 125px;     
+        background-size: 125px 125px;
+        }
+    .list{
+        font-size: 15px ;
+    }    
+    .btn-login, .btn-cadastrar {
+        font-size: 12px;
+    }
+    
 }
