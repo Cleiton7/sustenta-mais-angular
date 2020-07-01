@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
       prevEl: '.swiper-button-prev'
     },
     spaceBetween: 30,
-    slidesPerView: 4
+    slidesPerView: 4,
   }
 
   listaProdutos: Produtos[]
