@@ -24,7 +24,7 @@ import { SobreComponent } from './sobre/sobre.component';
 import { CadastrarProdutoComponent } from './cadastrar-produto/cadastrar-produto.component';
 import { EditarProdutoComponent } from './editar-produto/editar-produto.component';
 import { DeletarProdutoComponent } from './deletar-produto/deletar-produto.component';
-import { NotfoundComponent } from './notfound/notfound.component'
+import { DetalhesProdutoComponent } from './detalhes-produto/detalhes-produto.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +45,7 @@ import { NotfoundComponent } from './notfound/notfound.component'
     CadastrarProdutoComponent,
     EditarProdutoComponent,
     DeletarProdutoComponent,
-    NotfoundComponent
+    DetalhesProdutoComponent
   ],
   imports: [
     BrowserModule,
