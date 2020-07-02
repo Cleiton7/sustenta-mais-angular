@@ -23,7 +23,12 @@ export class CadastroComponent implements OnInit {
     private router: Router
     ) { }
 
-  ngOnInit(): void {
+  ngOnInit(){
+
+    //Inclusão do Scroll top na componente
+
+    window.scroll(0,0)
+
   }
 
   // metodo para validar a confirmação de senha no formulario de cadastro

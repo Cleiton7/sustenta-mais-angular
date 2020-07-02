@@ -16,7 +16,11 @@ export class EditarUsuarioComponent implements OnInit {
 
   constructor(private usuarioService: UsuariosService, private route: ActivatedRoute, private router: Router) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+
+    //Inclusão do Scroll top na componente
+
+    window.scroll(0,0)
 
     let id = this.route.snapshot.params['id']
     this.findById(id)

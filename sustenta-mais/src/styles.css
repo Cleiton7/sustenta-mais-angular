@@ -10,6 +10,7 @@
     outline: none !important;
 }
 
+/* Estilizaçao dos botões  */
 
 .btn-sustenta{
     display: inline-block;
@@ -51,7 +52,17 @@
 .formulario-label,
 .formulario-input,
 .btn-sustenta,
-.modal,
-#politica {
+.modal{
     font-family: 'Comfortaa', cursive;
 }
+
+/* Estilização dos textos */
+
+#politica {
+    font-family: 'Comfortaa', cursive;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0%;
+}
+

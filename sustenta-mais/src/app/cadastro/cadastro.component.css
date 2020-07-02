@@ -1,8 +1,14 @@
+section{
+    margin-top: 90px;
+margin-bottom: 90px;
+}
+
 .formulario {
     background-color: #f8f9fa;
     border-radius: 5px;
     margin: 0 auto;
     width: 30vw;
+    min-width: 332px;
 }
 
 @media (max-width: 768px){

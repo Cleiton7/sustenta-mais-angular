@@ -46,6 +46,11 @@
 
 /* detalhamento na responsividade */
 
+/*É necessário ajustar os botões de "Cadastro" e "Login"*/
+@media (max-width:1102px and min-width:992px){
+
+}
+
 @media (max-width:454px){
 
     .logo,.logo:hover{

@@ -9,7 +9,11 @@ export class ContatoComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(){
+
+    //Inclusão do Scroll top na componente
+
+    window.scroll(0,0)
   }
 
 }

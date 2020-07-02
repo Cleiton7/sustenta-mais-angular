@@ -14,7 +14,11 @@ export class CadastrarProdutoComponent implements OnInit {
 
   constructor(private produtoService : ProdutosService, private router : Router) { }
 
-  ngOnInit(): void {
+  ngOnInit(){
+
+    //Inclusão do Scroll top na componente
+    
+    window.scroll(0,0)
   }
 
   cadastroProduto() {

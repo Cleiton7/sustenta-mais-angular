@@ -18,6 +18,10 @@ export class ListaUsuariosComponent implements OnInit {
   constructor(private usuarioService: UsuariosService, private router: Router, private locationPage: Location) { }
 
   ngOnInit() {
+
+    //Inclusão do Scroll top na componente
+    window.scroll(0,0)
+
     this.findAllUsuarios()
 
     let item: string = localStorage.getItem('delOk')

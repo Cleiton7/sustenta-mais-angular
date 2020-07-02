@@ -35,6 +35,11 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.findAllProdutos()
+
+    // Inclusão do ScrollTop na componente
+
+    window.scroll(0,0)
+
   }
   
   findAllProdutos() {

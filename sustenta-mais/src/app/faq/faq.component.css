@@ -8,13 +8,25 @@ section {
 
 .faq-perguntas {
     background-color: #8BBA34;
-    height: 50px;
+    min-height: fit-content;
+}
+
+.faq-texto{
+    align-items: center;
 }
 
 .faq-perguntas > h2 > button {
     color: #FFF;
+    text-align: center;
 }
 
 .titulo {
     color: #000;
+}
+
+@media(max-width:767px){
+
+.faq-perguntas{
+    justify-content: center;
+}
 }

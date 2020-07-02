@@ -20,7 +20,10 @@ export class ProdutosComponent implements OnInit {
 
   public paginaAtual = 1;
   
-  ngOnInit(): void{
+  ngOnInit(){
+
+    //Inclusão do Scroll top na componente
+    window.scroll(0,0)
   
   this.getAllProdutos()
   

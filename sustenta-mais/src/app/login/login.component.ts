@@ -34,6 +34,10 @@ export class LoginComponent implements OnInit {
     ) { }
 
   ngOnInit() {
+
+    //Inclusão do Scroll top na componente
+    window.scroll(0,0)
+
     let item: string = localStorage.getItem('cadastroOk') // pega o valor do campo 'cadastroOk' no localStorage que foi adicionado ao fazer o cadastro e adiciona na variavel item
 
     // se esse If retornar true significa que houve um cadastro de usuario

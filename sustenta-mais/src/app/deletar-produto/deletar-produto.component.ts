@@ -20,6 +20,11 @@ export class DeletarProdutoComponent implements OnInit {
   constructor(private produtoService: ProdutosService, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
+
+    //Inclusão do Scroll top na componente
+
+    window.scroll(0,0)
+
     // pega o Id do produto que é clicado clicado para apagar
     let id: number = this.route.snapshot.params['id']
     // chama a função que pega o objeto através do Id capturado anteriormente
