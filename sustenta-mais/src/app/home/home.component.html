@@ -17,7 +17,9 @@
                 </div>
             </div>
             <div class="carousel-item">
-
+                <div class="carrossel-imagens-texto carrossel-tres mt-5">
+                    <p>Comprando com a gente você contribui diminuindo a quantidade de lixo no planeta</p>
+                </div>
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -31,13 +33,13 @@
     </div>
 </section>
 
-<section class="produtos w-100">
+<section class="produtos">
     <div>
         <h2 class="text-center mt-5 home-texto">Ofertas</h2>
     </div>
     <swiper class="container pt-5 pb-5" [config]="config">
         <div class="swiper-wrapper">
-            <div class="swiper-slide" *ngFor="let produto of produtoBarato">
+            <div class="swiper-slide swiper-card" *ngFor="let produto of produtoBarato">
                 <div class="card produtos-card">
                     <img src="{{ produto.imagem }}" class="card-img-top" alt="...">
                     <div class="card-body d-flex flex-column align-items-center">
@@ -53,12 +55,12 @@
     </swiper>
 </section>
 
-<section class="newsletter w-100 d-flex flex-column align-items-center">
+<section class="newsletter d-flex flex-column align-items-center">
     <div>
-        <h2 class="home-titulo newsletter-titulo mt-5">Assine nossa newsletter</h2>
+        <h2 class="home-titulo newsletter-titulo">Assine nossa newsletter</h2>
     </div>
 
-    <div class="newsletter-campos d-flex align-items-center ">
+    <div class="newsletter-campos d-flex align-items-center">
         <input class="newsletter-input home-texto" type="text" placeholder="nome">
         <input class="newsletter-input home-texto ml-4 mr-4" type="text" placeholder="e-mail">
         <button class="newsletter-btn home-texto btn-sustenta" type="button">Enviar</button>
@@ -69,14 +71,14 @@
     <div class="dicas-titulo mt-5 mb-5 text-center home-titulo">
         <h2>Para uma vida mais sustentável...</h2>
     </div>
-    <div class="d-flex justify-content-center">
-        <div class="dicas-um mr-5">
-            <p class="p-5 home-texto">
+    <div class="dicas-cards d-flex justify-content-center">
+        <div class="dicas-um">
+            <p class="home-texto">
                 Conheça <a href="https://www.cataki.org/pt/" target="_blank">o aplicativo Cataki</a>, desenvolvido com o intuito de conectar catadores com vc. O app é uma ferramenta muito prática para você que deseja descartar os resíduos que gera, de uma forma consciente e causando o menor impacto possível ao meio-ambiente, além de contribuir com a reciclagem.
             </p>
         </div>
-        <div class="dicas-dois ml-5">
-            <p class="p-5 home-texto">
+        <div class="dicas-dois">
+            <p class="home-texto">
                 Você também pode começar com pequenos passos. Que tal refletir sobre os produtos que consome no seu dia a dia? Podemos fazer isso ao comprar uma escova de dentes. Basta optar por aquela composta por um único tipo de plástico, assim você aumenta as chances desse produto ser reciclado.
             </p>
         </div>
