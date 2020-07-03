@@ -1,5 +1,19 @@
-.sobre{
-    background-color: #ececec;
+.sobre-nos-texto {
+    height: 250px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.sobre-nos-texto p {
+    font-size: 14pt;
+    padding-left: 20px;
+    width: 45%;
+}
+
+.sobre-nos-texto img {
+    padding-right: 20px;
 }
 
 .parallax {
@@ -13,7 +27,41 @@
     background-size: cover;
 }
 
-.card{
-    background-color: #ececec;
-    border: hidden;
+.parallax-card_missao_img img,
+.parallax-card_valor_img img {
+    height: 200px;
+    width: 200px;
+}
+
+.parallax-card_visao_img img {
+    height: 150px;
+    width: 250px;
+}
+
+.parallax-card{
+    background-color: #FFF;
+    opacity: .9;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 25%;
+}
+
+.parallax-card_texto {
+    display: flex;
+    align-items: flex-start;
+
+    height: 184px;
+}
+
+.parallax-card_visao {
+    display: flex;
+    justify-content: space-between;
+}
+
+.parallax-card_valor {
+    margin: 0 2px 0 2px;
 }
