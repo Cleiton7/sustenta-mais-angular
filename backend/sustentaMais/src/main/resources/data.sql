@@ -189,5 +189,5 @@ INSERT INTO tb_produto(nm_produto, ds_produto, pc_produto, img_produto, qt_produ
 
 INSERT INTO tb_usuario(nm_usuario, em_usuario, cd_senha, cd_admin) VALUES('Admin', 
  'admin@admin.com', 
- 'admin123', 
+ '$2a$10$9JdYhYwt0Ua6nX3tr210reqvKQ9SqPCkAxjuKxp4x1pMlRRt7bc7a', 
  'true');
