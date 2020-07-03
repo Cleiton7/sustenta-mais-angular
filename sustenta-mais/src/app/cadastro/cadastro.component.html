@@ -18,7 +18,7 @@
     
             <div class="form-group col-md-12">
                 <label class="formulario-label" for="email">E-mail</label>
-                <input type="text" class="form-control formulario-input" id="email" placeholder="Digite seu e-mail" [(ngModel)]="usuario.email" required #email="ngModel">
+                <input type="email" class="form-control formulario-input" id="email" placeholder="Digite seu e-mail" [(ngModel)]="usuario.email" required #email="ngModel">
                 <div class="alert alert-danger mt-2" *ngIf="!email.valid && email.touched">
                     E-mail é obrigatório
                 </div>
