@@ -39,6 +39,10 @@
     color: #000;
 }
 
+.btn-sair {
+    cursor: pointer;
+}
+
 /* detalhamento na responsividade */
 
 @media (max-width:1098px){

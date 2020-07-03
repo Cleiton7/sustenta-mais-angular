@@ -8,7 +8,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./detalhes-produto.component.css']
 })
 export class DetalhesProdutoComponent implements OnInit {
-    produto: Produtos = new Produtos
+  produto: Produtos = new Produtos
   
   constructor(private produtoService : ProdutosService, private route : ActivatedRoute, private router : Router) { }
 

@@ -39,7 +39,7 @@
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <a class="dropdown-item" routerLink="/cadastrar-produto">Cadastrar produto</a>
                                 <a class="dropdown-item" routerLink="/lista-usuarios">Usuários cadastrados</a>
-                                <a class="dropdown-item" (click)="sair()">Sair</a>
+                                <a class="dropdown-item btn-sair" (click)="sair()">Sair</a>
                             </div>
                         </div>
                         <div class="dropdown" *ngIf="auth.btnSair()">
@@ -47,7 +47,7 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Olá,
                                 {{ nome }}</button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButtonDois">
-                                <a class="dropdown-item" (click)="sair()">Sair</a>
+                                <a class="dropdown-item btn-sair" (click)="sair()">Sair</a>
                             </div>
                         </div>
                     </div>

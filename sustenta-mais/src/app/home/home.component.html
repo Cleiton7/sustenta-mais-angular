@@ -37,15 +37,19 @@
     <div>
         <h2 class="text-center mt-5 home-texto">Ofertas</h2>
     </div>
-    <swiper class="container pt-5 pb-5" [config]="config">
+    <swiper class="container mt-5 mb-5" [config]="config">
         <div class="swiper-wrapper">
             <div class="swiper-slide swiper-card" *ngFor="let produto of produtoBarato">
                 <div class="card produtos-card">
                     <img src="{{ produto.imagem }}" class="card-img-top" alt="...">
-                    <div class="card-body d-flex flex-column align-items-center">
-                        <p class="card-title text-center home-texto">{{ produto.nome }}</p>
-                        <p class="card-text home-texto">{{ produto.preco | currency:'R$ ' }}</p>
-                        <a href="#" class="btn btn-sustenta home-texto">confira</a>
+                    <div class="produtos-card_info">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <p class="card-title text-center home-texto">{{ produto.nome }}</p>
+                            <p class="card-text home-texto">{{ produto.preco | currency:'R$ ' }}</p>
+                        </div>
+                        <div>
+                            <button type="button" class="btn-sustenta home-texto">confira</button>
+                        </div>
                     </div>
                 </div>
             </div>

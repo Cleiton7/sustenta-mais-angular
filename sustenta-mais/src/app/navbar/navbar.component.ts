@@ -2,7 +2,6 @@ import { Component, OnInit, Renderer2, ElementRef, Query } from '@angular/core';
 import { Router } from '@angular/router';
 import { faWater } from '@fortawesome/free-solid-svg-icons';
 import { AuthService } from '../service/auth.service';
-import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-navbar',
@@ -19,16 +18,18 @@ export class NavbarComponent implements OnInit {
 
   constructor(
     private router : Router,
-    public auth : AuthService,
-    private location : Location
+    public auth : AuthService
   ) { }
 
   ngOnInit(): void {
   }
 
   sair() {
-    localStorage.clear()
-    this.router.navigate(['login'])
+    localStorage.setItem('admin', null)
+    localStorage.removeItem('token')
+    localStorage.removeItem('nome')
+    localStorage.removeItem('delOk')
+    this.router.navigate(['home'])
   }
 
 }

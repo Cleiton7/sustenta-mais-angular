@@ -47,16 +47,28 @@
 .produtos {
     height: 500px;
     width: 100%;
+    margin-bottom: 50px;
 }
 
 swiper {
-    height: 90%;
+    height: 520px;
     width: 90%;
+}
+
+swiper .swiper-card {
+    height: 420px;
 }
 
 .produtos-card {
     height: 50%;
     width: 100%;
+}
+
+.card > div {
+    height: 209px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .produtos-card img {
