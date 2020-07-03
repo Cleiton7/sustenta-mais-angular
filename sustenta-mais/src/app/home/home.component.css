@@ -1,19 +1,74 @@
+/* ESTILIZAÇÃO CARROSEL */
+
+.carrossel {
+    width: 100%;
+    height: 500px;
+}
+
+.carrossel-imagens > div {
+    width: 100%;
+    height: 500px;
+}
+
+.carrossel-imagens > div:nth-of-type(1) {
+    background-image: url('../../assets/images/sustentabilidade-one.jpg');
+    background-size: cover;
+}
+
+.carrossel-imagens > div:nth-of-type(2) {
+    background-image: url('../../assets/images/sustentabilidade-dois.png');
+    background-size: 100% auto;
+    background-position: 100% 35%;
+}
+
+.carrossel-imagens > div:nth-of-type(3) {
+    background-image: url('../../assets/images/sustentabilidade-tres.jpg');
+    background-size: cover;
+}
+
+.carrossel-imagens-texto {
+    margin-left: 85px;
+    width: 500px;
+}
+
+.carrossel-imagens-texto > p {
+    color: #658726;
+    font-family: 'Courgette', cursive;
+    font-size: 30pt;
+    text-align: center;
+}
+
+.carrossel-tres {
+    margin-left: 200px;
+}
 
 /* ESTILIZAÇÃO DOS CARDS */
 
 .produtos {
     height: 500px;
-    width: 100vw;
+    width: 100%;
+    margin-bottom: 50px;
 }
 
 swiper {
-    height: 90%;
+    height: 520px;
     width: 90%;
+}
+
+swiper .swiper-card {
+    height: 420px;
 }
 
 .produtos-card {
     height: 50%;
     width: 100%;
+}
+
+.card > div {
+    height: 209px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .produtos-card img {
@@ -23,5 +78,257 @@ swiper {
 
 .swiper-button-next,
 .swiper-button-prev {
-    color: #658726;
+    color: #8BBA34;
+}
+
+/* Estilização da newsletter */
+
+.newsletter {
+    background-color: #8BBA34;
+    height: 200px;
+    width: 100%;
+}
+
+.newsletter > div {
+    height: 50px;
+    margin-top: 20px;
+}
+
+.newsletter-titulo {
+    color: #FFF;
+}
+
+.newsletter-campos > input,
+.newsletter-campos > button {
+    height: 45px;
+}
+
+.newsletter-campos {
+    width: 60%;
+}
+
+.newsletter-campos > input {
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px;
+    width: 50%;
+}
+
+.newsletter-campos > button {
+    padding: 10px;
+    width: 80px;
+}
+
+.newsletter-btn {
+    background-color: #FFF;
+    border-radius: 5px;
+}
+
+/* ESTILIZAÇÃO DAS DICAS */
+
+.dicas {
+    height: 500px;
+    width: 100%;
+}
+
+.dicas-um,
+.dicas-dois {
+    height: 400px;
+    width: 30%;
+    background-color: #8BBA34;
+    opacity: .8;
+}
+
+.dicas-um {
+    border-radius: 50px 0 50px 0;
+    margin-right: 50px;
+}
+
+.dicas-dois {
+    border-radius: 0 50px 0 50px;
+    margin-left: 50px;
+}
+
+.dicas-um > p,
+.dicas-dois > p {
+    color: #FFF;
+    font-size: 19px;
+
+    text-align: justify;
+    padding: 50px;
+}
+
+.dicas-um > p > a {
+    text-decoration: none;
+    color: #000;
+}
+
+@media (max-width: 425px){
+    .carrossel {
+        height: 250px;
+    }
+
+    .carrossel-imagens > div {
+        width: 100%;
+        height: 250px;
+    }
+
+    .carrossel-imagens > div:nth-of-type(1) {
+        background-size: cover;
+    }
+    
+    .carrossel-imagens > div:nth-of-type(2) {
+        background-size: 100% auto;
+        background-position: 100% 35%;
+    }
+    
+    .carrossel-imagens > div:nth-of-type(3) {
+        background-size: cover;
+    }
+    
+    .carrossel-imagens-texto {
+        margin-left: 50px;
+        width: 200px;
+    }
+
+    .carrossel-imagens-texto > p {
+        font-size: 14pt;
+        text-align: center;
+    }
+
+    .carrossel-imagens .carrossel-imagens-texto:nth-of-type(2) {
+        align-items: baseline;
+        padding: 0;
+    }
+
+    .carrossel-tres {
+        margin-left: 50px;
+    }
+
+    /* media queries carrossel de produtos */
+    .produtos > swiper > div > .swiper-card {
+        width: 100%;
+    }
+
+    /* responsividade da newsletter */
+    .newsletter {
+        height: 300px;
+    }
+
+    .newsletter-titulo {
+        font-size: 18pt;
+    }
+
+    .newsletter-campos {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .newsletter-campos .newsletter-input {
+        margin-top: 20px;
+        width: 80%;
+    }
+
+    .newsletter-btn {
+        margin-top: 20px;
+    }
+
+    /* Responsividade seção de dicas */
+    .dicas {
+        height: 500px;
+    }
+
+    .dicas > .dicas-titulo > h2{
+        font-size: 18pt;
+        text-align: center;
+        width: 80%;
+    }
+
+    .dicas > .dicas-titulo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .dicas .dicas-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dicas .dicas-dois {
+        display: none;
+    }
+
+    .dicas .dicas-um {
+        height: 340px;
+        width: 80%;
+        margin-right: 0;
+    }
+
+    .dicas .dicas-um p {
+        font-size: 13pt;
+        padding: 30px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 375px) {
+    .dicas .dicas-um p {
+        font-size: 12pt;
+    }
+}
+
+@media (max-width: 320px) {
+    .carrossel {
+        height: 200px;
+    }
+
+    .carrossel-imagens > div {
+        height: 200px;
+    }
+
+    .carrossel-imagens-texto {
+        margin-left: 25px;
+    }
+
+    .carrossel-imagens-texto > p {
+        font-size: 12pt;
+    }
+
+    .newsletter {
+        height: 265px;
+    }
+
+    .newsletter-titulo {
+        font-size: 15pt;
+    }
+
+    .newsletter .newsletter-campos {
+        height: 110px;
+    }
+
+    .newsletter .newsletter-campos,
+    .newsletter .newsletter-campos .newsletter-btn {
+        margin-top: 0;
+    }
+
+    .newsletter .newsletter-campos .newsletter-input {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .dicas {
+        margin-bottom: 0;
+    }
+
+    .dicas .dicas-um {
+        height: 350px;
+        width: 90%;
+    }
+
+    .dicas .dicas-um > p,
+    .dicas .dicas-dois > p {
+        font-size: 12pt;
+        padding: 25px;
+        margin: 0;
+    }
 }

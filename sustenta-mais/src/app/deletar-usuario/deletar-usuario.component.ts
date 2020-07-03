@@ -36,7 +36,6 @@ export class DeletarUsuarioComponent implements OnInit {
 
   deletarUsuario(){
     this.usuarioService.deleteUsuario(this.usuario.id).subscribe(() => {
-      this.delOk = true
       this.router.navigate(['/lista-usuarios'])
       localStorage.setItem("delOk", this.delOk.toString())
     })

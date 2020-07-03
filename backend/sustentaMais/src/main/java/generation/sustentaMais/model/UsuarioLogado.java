@@ -6,6 +6,7 @@ public class UsuarioLogado {
 	private String nome;
 	private String email;
 	private String token;
+	private String admin;
 	
 	public long getCodigo() {
 		return codigo;
@@ -30,5 +31,11 @@ public class UsuarioLogado {
 	}
 	public void setToken(String token) {
 		this.token = token;
+	}
+	public String getAdmin() {
+		return admin;
+	}
+	public void setAdmin(String admin) {
+		this.admin = admin;
 	}
 }

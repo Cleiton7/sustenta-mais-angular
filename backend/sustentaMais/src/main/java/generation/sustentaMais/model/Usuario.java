@@ -6,13 +6,14 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.Size;
 
 import com.sun.istack.NotNull;
 
 @Entity
-@Table(name = "TB_USUARIO")
+@Table(name = "TB_USUARIO", uniqueConstraints={@UniqueConstraint(columnNames={"cd_admin"})})
 public class Usuario {
 	@Column(name = "cd_usuario", nullable = false, length = 60)
 	@Id
@@ -32,6 +33,9 @@ public class Usuario {
 	@Column(name = "cd_senha", nullable = false, length = 255)
 	@Size(min = 6, max = 255)
 	private String senha;
+	
+	@Column(name = "cd_admin")
+	private String admin;
 
 	public long getId() {
 		return id;
@@ -63,5 +67,13 @@ public class Usuario {
 
 	public void setSenha(String senha) {
 		this.senha = senha;
+	}
+
+	public String getAdmin() {
+		return admin;
+	}
+
+	public void setAdmin(String admin) {
+		this.admin = admin;
 	}
 }

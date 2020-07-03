@@ -18,6 +18,8 @@ export class CadastroComponent implements OnInit {
 
   cadastroOk: boolean = false;
 
+  token : string = localStorage.getItem('token')
+
   constructor(
     private usuarioService: UsuariosService,
     private router: Router
@@ -29,6 +31,7 @@ export class CadastroComponent implements OnInit {
 
     window.scroll(0,0)
 
+    this.verificaAtenticacao()
   }
 
   // metodo para validar a confirmação de senha no formulario de cadastro
@@ -40,11 +43,25 @@ export class CadastroComponent implements OnInit {
 
   // metodo para cadastro de usuario chamando o EndPoint postUsuario() da service
   cadastroUsuario() {
+    let admin = localStorage.getItem('admin')
     this.usuarioService.postUsuario(this.usuario).subscribe((resp: Usuarios) => {
       this.usuario = resp
       this.cadastroOk = true
-      this.router.navigate(["login"]) // após o cadastro o usuario é redirecionado para a tela de login
+      
+      if(admin === 'true'){
+        this.router.navigate(["lista-usuarios"]) // após o cadastro o usuario é redirecionado para a tela de login
+      }
+      this.router.navigate(["login"])
       localStorage.setItem("cadastroOk", this.cadastroOk.toString()) // o valor booleano da variavel 'cadastroOk' é adicionado no localStorage em forma de string para ser usado na tela de login
     })
+  }
+
+  verificaAtenticacao() {
+    let admin = localStorage.getItem('admin')
+    let token = localStorage.getItem('token')
+
+    if(admin != 'true' && token === 'null') {
+      this.router.navigate(['produtos'])
+    }
   }
 }

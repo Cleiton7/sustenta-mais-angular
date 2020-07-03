@@ -18,8 +18,20 @@ export class AuthService {
   btnSair() {
     let ok = false
     let token = localStorage.getItem('token')
+    let admin = localStorage.getItem('admin')
 
-    if(token != null) {
+    if(token != null && admin == 'null') {
+      ok = true
+    }
+    return ok
+  }
+
+  btnSairAdmin() {
+    let ok = false
+    let token = localStorage.getItem('token')
+    let admin = localStorage.getItem('admin')
+
+    if(token != null && admin != 'null') {
       ok = true
     }
     return ok

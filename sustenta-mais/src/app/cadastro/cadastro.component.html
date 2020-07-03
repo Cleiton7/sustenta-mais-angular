@@ -1,8 +1,11 @@
 <!--<section class="cadastro height-min pb-5 pt-5">-->
 <section class="container-xl height-min d-flex align-items-center">  
     <div class="formulario d-flex flex-column justify-content-center col-md-5">
-        <div class="mb-5 mt-5">
+        <div class="mb-5 mt-5" *ngIf="!token">
             <h2 class="formulario-titulo text-center">Preencha o formulário</h2>
+        </div>
+        <div class="mb-5 mt-5" *ngIf="token">
+            <h2 class="formulario-titulo text-center">Cadastrar Usuário</h2>
         </div>
         <div class="col-md-12">
             <div class="form-group col-md-12" [class.has-error]="!nome.valid && nome.touched">
@@ -15,7 +18,7 @@
     
             <div class="form-group col-md-12">
                 <label class="formulario-label" for="email">E-mail</label>
-                <input type="text" class="form-control formulario-input" id="email" placeholder="Digite seu e-mail" [(ngModel)]="usuario.email" required #email="ngModel">
+                <input type="email" class="form-control formulario-input" id="email" placeholder="Digite seu e-mail" [(ngModel)]="usuario.email" required #email="ngModel">
                 <div class="alert alert-danger mt-2" *ngIf="!email.valid && email.touched">
                     E-mail é obrigatório
                 </div>

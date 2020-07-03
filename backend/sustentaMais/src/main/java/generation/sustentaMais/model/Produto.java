@@ -29,7 +29,7 @@ public class Produto {
 	@Column(name = "pc_produto", nullable = false, precision = 6, scale = 2)
 	private double preco;
 	
-	@Column(name = "img_produto", nullable = false, length = 255)
+	@Column(name = "img_produto", nullable = false, length = 256)
 	private String imagem;
 	
 	@Column(name = "qt_produto", nullable = false)
