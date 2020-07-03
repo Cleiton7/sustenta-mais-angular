@@ -184,3 +184,10 @@ INSERT INTO tb_produto(nm_produto, ds_produto, pc_produto, img_produto, qt_produ
  '7.00', 
  'https://beegreen.eco.br/wp-content/uploads/2019/12/canudao_de_inox_reto_beegreen_still.jpg',
  '100'); 
+
+-- popular admin
+
+INSERT INTO tb_usuario(nm_usuario, em_usuario, cd_senha, cd_admin) VALUES('Admin', 
+ 'admin@admin.com', 
+ 'admin123', 
+ 'true');
