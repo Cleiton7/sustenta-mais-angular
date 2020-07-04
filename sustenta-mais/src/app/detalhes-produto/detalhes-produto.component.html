@@ -5,8 +5,8 @@
           <tr>
             <th scope="col">Id</th>
             <th scope="col">Nome</th>
-            <th scope="col">valor</th>
-            <th scope="col">estoque</th>
+            <th scope="col">preco</th>
+            <th scope="col">quantidade/th>
             <th></th>
             <th></th>
           </tr>
@@ -15,8 +15,8 @@
           <tr *ngFor="let Produto of produto">
             <th scope="row">{{ Produto.id }}</th>
             <td>{{ Produto.nome }}</td>
-            <td>{{ Produto.valor }}</td>
-            <td>{{ Produto.estoque }}</td>
+            <td>{{ Produto.preco }}</td>
+            <td>{{ Produto.quantidade }}</td>
           </tr>
         </tbody>
         <div class="col-md-12 d-flex justify-content-center">
