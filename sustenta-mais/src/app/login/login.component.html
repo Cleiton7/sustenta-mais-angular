@@ -5,15 +5,14 @@
     </div>
 </div>
 <section class="container-xl height-min d-flex align-items-center"> 
-    <div class="formulario col-md-5 pt-5 pb-5">
-        
+    <div class="formulario col-md-5 pt-5 pb-5">        
         <div class="d-flex flex-column align-items-center col-md-12">
             <div class="mb-0 mt-0">
                 <h2 class="login-titulo text-center">Realize seu login</h2>
             </div>
             <div class="form-group col-md-11">
                 <label class="formulario-label" for="email">E-mail</label>
-                <input type="text" class="form-control formulario-input" id="email" placeholder="Digite seu e-mail" [(ngModel)]="usuarioLogin.email" required #email="ngModel">
+                <input type="text" class="form-control formulario-input" id="email" placeholder="Digite seu e-mail" [(ngModel)]="usuarioLogin.email" required #email="ngModel" (keyup.enter)="entrar()">
                 <div class="alert alert-danger mt-2" *ngIf="!email.valid && email.touched">
                     E-mail é obrigatório
                 </div>
@@ -21,7 +20,7 @@
     
             <div class="form-group col-md-11 mt-2">
                 <label class="formulario-label" for="senha">Senha</label>
-                <input type="password" class="form-control formulario-input" id="senha" placeholder="Digite sua senha" [(ngModel)]="usuarioLogin.senha" required #senha="ngModel">
+                <input type="password" class="form-control formulario-input" id="senha" placeholder="Digite sua senha" [(ngModel)]="usuarioLogin.senha" required #senha="ngModel" (keyup.enter)="entrar()">
                 <span class="olho"></span>
                 <div class="alert alert-danger mt-2" *ngIf="!senha.valid && senha.touched">
                     Senha é obrigatório
@@ -36,6 +35,5 @@
                 <button type="button" class="btn-sustenta col-md-6" (click)="entrar()">Entrar</button>
             </div>
         </div>
-
     </div>
 </section>
