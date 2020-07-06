@@ -40,11 +40,6 @@ export class ProdutosComponent implements OnInit {
 
   this.getAllProdutos()
   
-    let token = localStorage.getItem('token')
-    if(token == null) {
-      alert('Faça login')
-      this.router.navigate(['/login'])
-    }
 
     this.getAllProdutos()
     
