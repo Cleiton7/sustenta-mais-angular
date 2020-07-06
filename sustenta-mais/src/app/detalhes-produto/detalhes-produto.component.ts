@@ -9,21 +9,21 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class DetalhesProdutoComponent implements OnInit {
   produto: Produtos = new Produtos
-  
-  constructor(private produtoService : ProdutosService, private route : ActivatedRoute, private router : Router) { }
+
+  constructor(private produtoService: ProdutosService, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
     let id = this.route.snapshot.params['id']
     this.findById(id)
   }
 
-  findById(id:number){
-    this.produtoService.getByIdProduto(id).subscribe((resp: Produtos)=>{
+  findById(id: number) {
+    this.produtoService.getByIdProduto(id).subscribe((resp: Produtos) => {
       this.produto = resp
     })
   }
-  comprarProduto(){
-    this.produtoService.putProduto(this.produto).subscribe((resp: Produtos)=>{
+  comprarProduto() {
+    this.produtoService.putProduto(this.produto).subscribe((resp: Produtos) => {
       this.produto = resp
       this.router.navigate(['/produtos'])
     })

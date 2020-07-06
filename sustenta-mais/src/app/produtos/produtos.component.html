@@ -25,11 +25,14 @@
                     <span>Estoque: {{produtos.quantidade}}</span>
                 </div>
                 <div class="btn-admin" *ngIf="admin">
-                    <button class="btn-editar btn-outline-success btn" type="button" [routerLink]="['/editar-produto', produtos.id]">Editar</button>
-                    <button class="btn-apagar btn-outline-danger btn" type="button" [routerLink]="['/deletar-produto', produtos.id]">Apagar</button>
+                    <button class="btn-editar btn-outline-success btn" type="button"
+                        [routerLink]="['/editar-produto', produtos.id]">Editar</button>
+                    <button class="btn-apagar btn-outline-danger btn" type="button"
+                        [routerLink]="['/deletar-produto', produtos.id]">Apagar</button>
                 </div>
                 <div class="btn-ver" *ngIf="!admin">
-                    <button class="btn-sustenta" type="button" [routerLink]="['/detalhes-produto', produtos.id]">Ver</button>
+                    <button class="btn-sustenta" type="button"
+                        [routerLink]="['/detalhes-produto', produtos.id]">Ver</button>
                 </div>
             </div>
         </div>

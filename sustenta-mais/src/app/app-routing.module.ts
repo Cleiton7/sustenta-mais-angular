@@ -34,8 +34,8 @@ const routes: Routes = [
   { path: 'editar-produto/:id', component: EditarProdutoComponent },
   { path: 'deletar-produto/:id', component: DeletarProdutoComponent },
   { path: 'produtos/nome/:nome', component: ProdutosComponent },
-  { path: '**', component: NotfoundComponent },
-  { path: 'detalhes-produto/:id', component: DetalhesProdutoComponent }
+  { path: 'detalhes-produto/:id', component: DetalhesProdutoComponent },
+  { path: '**', component: NotfoundComponent }
 ];
 
 @NgModule({
