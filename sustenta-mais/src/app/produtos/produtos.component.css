@@ -19,6 +19,19 @@
     width: 80%;
 }
 
+.card-sustenta{
+    min-height: 412px;
+}
+
+.card-header{
+    max-height: 181px;
+    min-height: 181px;
+}
+
+.card-body{
+    min-height: 200px;
+    max-height: 200px;
+}
 
 .lupa{
     background-image: url("../../assets/logos/lupa_preta.png");
@@ -44,11 +57,39 @@
 
 @media (max-width:991px){
 
+    .card-sustenta,
+    .card-header,
+    .card-img-top {
+        max-height: fit-content;
+        flex-wrap: wrap;
+    }
+
     .form-pesquisa{
         margin-top: 2.5rem;
     }
 
     .btn-sustenta{
         margin-top: 2.5rem;
+    }
+}
+
+@media (max-width:574px){
+
+    .form-menu{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-items: space-around;
+    }
+
+    .form-pesquisa{
+        max-width: 450px;
+        margin-right: 10px;
+    }
+
+    .card-sustenta,
+    .card-header,
+    .card-img-top {
+        max-height: fit-content;
+        flex-wrap: wrap;
     }
 }

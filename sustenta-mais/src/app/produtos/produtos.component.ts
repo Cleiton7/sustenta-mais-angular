@@ -89,4 +89,8 @@ export class ProdutosComponent implements OnInit {
     })
   }
 
+  // Este método sobe ao início da página de produtos, ao trocar a página
+  trocaPagina() {
+    window.scroll(0,0);
+}
 }

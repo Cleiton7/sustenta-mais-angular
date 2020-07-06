@@ -36,6 +36,7 @@ const routes: Routes = [
   { path: 'produtos/nome/:nome', component: ProdutosComponent },
   { path: 'detalhes-produto/:id', component: DetalhesProdutoComponent },
   { path: '**', component: NotfoundComponent }
+
 ];
 
 @NgModule({
